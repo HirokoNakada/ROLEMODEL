@@ -1,0 +1,174 @@
+/**
+  全体のCSSのCSS設定
+**/
+body {
+  font-family:"Rounded-X M+ 2p";
+  font-size: 16px;
+  color: #333;
+}
+
+li{
+  font-family:"Glober";
+  font-size:20px;
+}
+/**
+  リンクのCSS設定
+**/
+a {
+  text-decoration: none;
+  font-family:"Glober";
+  color: #777;
+}
+
+
+div{
+
+  padding-top:5px;
+}
+
+
+/**
+  リンクをマウスオーバーしたときのCSS設定
+**/
+a:hover {
+  color: #2ECC71;
+}
+
+.container {
+  height: 100%;
+}
+
+
+p{
+  text-align;
+  font-family:"Rounded-X M+ 2p";
+}
+
+/**
+  固定ヘッダーのCSS設定
+**/
+.mainHeader {
+  /* ヘッダーの背景画像 */
+  padding: 180px 0 100px;
+  overflow: hidden;
+  position: relative;
+  height:850px;
+  padding-top:30px;
+}
+.mainHeader .inner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.76);
+  z-index: 5;
+}
+/**
+  サイト名のCSS設定
+**/
+.mainHeader h1 {
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+}
+.mainHeader h1 img {
+  display: block;
+  float: left;
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+/**
+  メニューのCSS設定
+**/
+.mainHeader .mainNav ul {
+  float: right;
+  line-height: 80px;
+}
+.mainHeader .mainNav ul li {
+  float: left;
+}
+.mainHeader .mainNav ul li a {
+  display: block;
+  padding: 0 20px;
+}
+/**
+  ヘッダーのテキスト文のCSS設定
+**/
+.mainHeader .text {
+  margin: auto;
+  color: #fff;
+  border: 1px solid #fff;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 30px 20px;
+  z-index: 1;
+}
+/**
+  ヘッダーのタイトルのCSS設定
+**/
+.mainHeader .text h3 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/**
+  コンテンツのタイトルのCSS設定
+**/
+.content > h2 {
+  font-size: 30px;
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+
+}
+.content >p{
+  text-align: center;
+  font-size:70px;
+  font-family:"PenelopeAnne";
+}
+/**
+  コンテンツの横並びのCSS設定
+**/
+.content .list {
+  border-right: 1px solid #eee;
+  margin: 0;
+  padding: 20px 40px 40px;
+}
+.content .list img {
+  width: 100%;
+  display: block;
+  margin: 0 auto 20px;
+}
+.content .list h2, .content .list p {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  
+}
+/**
+コンテンツタイトルのCSS設定
+**/
+.content .list h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.mainFooter {
+  font-size: 12px;
+}
+.mainFooter p {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+h2{
+  font-family:"Glober";
+  font-size:30px;
+}
