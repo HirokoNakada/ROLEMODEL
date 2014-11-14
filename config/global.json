@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "ROLE MODEL": {
+            "applicationId": "EypdoI1hRR9e2CCHlllrB6ZvYYGxjfRmXCQGQQ4q", 
+            "masterKey": "YhGk3PlkItNmdMfwGzEXwCk122XyeZm88MY0YP9a"
+        }, 
+        "_default": {
+            "link": "ROLE MODEL"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.1"
+    }
+}
