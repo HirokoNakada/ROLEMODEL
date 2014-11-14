@@ -21,11 +21,6 @@ a {
 }
 
 
-div{
-
-  padding-top:5px;
-
-}
 
 
 /**
@@ -43,18 +38,20 @@ a:hover {
 p{
   text-align;
   font-family:"Rounded-X M+ 2p";
+
 }
+
 
 /**
   固定ヘッダーのCSS設定
 **/
 .mainHeader {
   /* ヘッダーの背景画像 */
-  padding: 180px 0 100px;
+ 
   overflow: hidden;
   position: relative;
-  height:850px;
-  padding-top:30px;
+  height:600px;
+  background-color:none;
 }
 .mainHeader .inner {
   position: fixed;
@@ -126,6 +123,7 @@ p{
   padding: 40px 0;
   text-align: center;
 
+
 }
 .content >p{
   text-align: center;
@@ -152,6 +150,10 @@ p{
   
 }
 
+
+.whats-box{
+  background-color:#F0BA32;
+}
 .movie {
   text-align:center;
 }
@@ -173,7 +175,9 @@ p{
   background-color: #fff;
 }
 
+
 h2{
   font-family:"Glober";
   font-size:30px;
+
 }
