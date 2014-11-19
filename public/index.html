@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   
-<link rel='stylesheet' id='bootstrap-css'  href='css/bootstrap.min.css' type='text/css' media='all' />
+
 
 
   </script>
@@ -40,21 +40,18 @@
 			</div>
 		</div>
 		
+		    <div class="row">
+      <div class="small-5 columns movie" >
 
-		<ul class="bxslider">
-	
-			<li>
-				<img src="img/top3.png" height="1000" width="800" alt="">
-			</li>
-			<li>
-	
+        <iframe width="1100" height="565" src="https://www.youtube.com/embed/zYt7xfj99K4?theme=light&amp;showinfo=0&amp;autohide=1"  frameborde="0" allowfullscreen></iframe>
+      </div>
+  
+      </div>
+    </div>
 
-			</li>
-			<li>
-	
 
-			</li>
-		</ul>
+	</div>
+	</div>
 	</header>
 
 
@@ -72,40 +69,15 @@
 		   </p>
 		</div>
 
-		    <div class="row">
-      <div class="small-5 columns movie" >
-
-        <iframe width="1000" height="565" src="https://www.youtube.com/embed/zYt7xfj99K4?theme=light&amp;showinfo=0&amp;autohide=1"  frameborde="0" allowfullscreen></iframe>
-      </div>
-  
-      </div>
-    </div>
-
-
-	</div>
-	</div>
-
 	<div class="black">
 	<div class="content row">
 	
-		<h2>INTERVIEW</h2>
-		<div class="list grid-12">
-		<p style="text-align: center;">
-
-			  COMING SOON...
-		</p>
-
-
-		</div>
-
-
-	</div>
-	</div>
 
 
 <div class="row" style="text-align: center">
 <div class="col-md-12"  style="margin-bottom: 20px">
 	<Input type="button" value="会員登録" onClick="location.href='bootstrap_form.html'">
+		<button id="submit-button" type="button">会員登録</button>
 </div>
 </div>
 
@@ -117,7 +89,7 @@
 
 <div class="row" style="text-align: center">
 <div class="col-md-12"  style="margin-bottom: 20px">
-	<Input type="button" value="ROLE MODELを応援する" onClick="location.href='http://camp-fire.jp'">
+	<Input type="button" value="ROLE MODELを応援したい方はこちら！" onClick="location.href='http://camp-fire.jp'">
 </div>
 </div>
 
@@ -188,17 +160,43 @@
     });
 
   // Facebook の SDK を読み込んだ後の処理をここに書く。
-    Parse.FacebookUtils.logIn("user_likes,email", {
-    success: function(user) {
-        if (!user.existed()) {
-            alert("User signed up and logged in through Facebook!");
-            console.log(user);
-        } else {
-            alert("User logged in through Facebook!");
+
+function parseLoginUsingFB() {
+    console.log("Logging in using Facebook.");
+
+    Parse.FacebookUtils.logIn("email", {
+        success: function(user) {
+            if (!user.existed()) {
+                alert("User signed up and logged in through Facebook! User: " + user.id);
+                console.log(user);
+            } else {
+                alert("User logged in through Facebook! User: " + user.id);
+            }
+        },
+        error: function(user, error) {
+            alert("User cancelled the Facebook login or did not fully authorize.");
+            FB.logout();
         }
-    },
-    error: function(user, error) {
-        alert("User cancelled the Facebook login or did not fully authorize.");
+    });
+};
+
+FB.getLoginStatus(function (response) {
+    if (response.status === "connected") {    // 既にログインしている
+        parseLoginUsingFB();
+    }
+    else if (response.status === "not_authorized") {    // ユーザが許可をしていない場合
+        parseLoginUsingFB();
+    }
+    else {    // それ以外
+        // Facebook にログイン
+        FB.login(function (loginResponse) {
+            if (response.authResponse) {
+                parseLoginUsingFB();
+            }
+            else {
+                console.log("User cancelled the Facebook login or did not fully authorize.");
+            }
+        });
     }
 });
 
