@@ -8,10 +8,11 @@
 	<title>ROLE MODEL</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/setting.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   
 
 
@@ -33,7 +34,7 @@
 					<li><a href="menu01.html">ABOUT</a></li>
 					<li><a href="menu02.html">INTERVIEW</a></li>
 					<li><a href="menu03.html">CONTACT US</a></li>
-					<li><a href="menu03.html">Join!</a></li>
+					<li><a href="menu03.html">会員登録</a></li>
 
 				</ul>
 			</nav>
@@ -59,37 +60,204 @@
   	<div class="black">
 	<div class="content row">
 	
-		<h2>ABOUT  ROLE MODEL</h2>
+		<h2>ABOUT  ROLE</h2>
 		<div class="list grid-12">
 		<p style="text-align: center;">
 		
-			ROLE MODELは社会で活躍している方々に全国の中高生から質問を募集し、<br>リアルタイムでインタビューを配信するサービスです。
+			ROLEは全国の中高生を刺激したいという想いで作っています。<br>社会の第一線で活躍されてる方にインタビューをし、リアルタイムや記事などで配信します。
 
 			
 		   </p>
 		</div>
+
+
+  	<div class="black">
+	<div class="content row">
+	
+		<h1>第1回インタビューしました！</h1>
+
+
+		</div>
+
 
 	<div class="black">
 	<div class="content row">
 	
 
 
-<div class="row" style="text-align: center">
-<div class="col-md-12"  style="margin-bottom: 20px">
-	<Input type="button" value="会員登録" onClick="location.href='bootstrap_form.html'">
-		<button id="submit-button" type="button">会員登録</button>
+ <div class="recommend pickup" style="taxt-align: center">
+ 
+  <ul class="list"　>
+    <li>
+     <p><a href="http://www.cinra.net/interview/201411-interstellar"><img src="img/INTERVIEW/yajimasanonly2.png" alt="矢島里佳氏が語る中高生の時にやっていた方がいいことって？" /></a></p>
+    </li>
+
 </div>
-</div>
-
-
-
-
-
-
 
 <div class="row" style="text-align: center">
+<button type="btn" onclick="window.location.href='#div-modal'" type="button" data-toggle="modal" data-target="#div-modal">会員登録</button>
+<!-- モーダルウィンドウの本体 -->
+
+<div id="div-modal" class="modal fade"> 
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">新規登録</h4>
+      </div>
+       <div class="modal-body">
+          <div class="container">
+
+ 
+      <div class="panel-body"　width="100px">
+
+        <form action="">
+
+          <div class="form-group">
+            
+          </div>
+
+                   <div class="form-group">
+            <label for="name">ニックネーム</label> <span class="text-danger">※必須</span>
+            <input type="text" id="name" placeholder="お名前を入力してください" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" placeholder="メールアドレスを入力してください" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="pass">パスワード</label>
+            <input type="password" class="form-control" id="pass" placeholder="パスワードを入力してください">
+            <span class="help-block">パスワードは最低6文字以上を設定してください</span>
+          </div>
+
+             <div class="form-group">
+            <label for="age">学年</label>
+            <select class="form-control" id="age">
+              <option value="中学1年生">中学1年生</option>
+              <option value="中学2年生">中学2年生</option>
+              <option value="中学3年生">中学3年生</option>
+              <option value="高校1年生">高校1年生</option>
+              <option value="高校2年生">高校2年生</option>
+              <option value="高校3年生">高校3年生</option>
+            
+             
+            </select>
+          </div>
+
+
+         
+          <div class="form-group">
+            <label for="gender">性別</label>
+            <div class="radio">
+              <label><input type="radio" name="gender" value="">男性</label>
+              <label><input type="radio" name="gender" value="">女性</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="area">お住まいの地域</label>
+            <select class="form-control" id="area">
+              <option value="北海道・東北">北海道・東北</option>
+              <option value="北陸">北陸</option>
+              <option value="甲信越">甲信越</option>
+              <option value="関東">関東</option>
+              <option value="中部">中部</option>
+              <option value="関西">関西</option>
+              <option value="中国">中国</option>
+              <option value="四国">四国</option>
+              <option value="九州・沖縄">九州・沖縄</option>
+            </select>
+          </div>
+
+       
+
+          <div class="form-group">
+            <div class="checkbox">
+              <label><input type="checkbox" value="">プライバシーポリシーに同意する</label>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+      <!-- /.panel-body -->
+<a href="https://www.facebook.com/rolemodeljapan"><img src="img/facebook.png" height="64" width="64" alt="" vspace="20px" hspace="20px">Facebookで登録する</a>
+
+<a href="
+https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vspace="20px" hspace="20px" >Twitterで登録する</a>
+
+  </div>
+  <!-- /.container -->
+       </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+           <button type="button" class="btn btn-primary">登録</button>
+         </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+
+</div>
+
+
+
+<div class="content row">
+		<!-- メニュー
+			================================================== -->
+		<h1>LIVEインタビュー配信予定</h1>
+		<div class="list grid-4">
+		
+			<img src="img/mogi.jpg" height="155" width="155" alt="">
+			
+			<h2><a href="https://twitter.com/kenichiromogi" target="_blank">茂木健一郎氏</a></h2>
+			
+			<p>11月27日　20時〜</p>
+<div class="row" style="text-align: center">
 <div class="col-md-12"  style="margin-bottom: 20px">
-	<Input type="button" value="ROLE MODELを応援したい方はこちら！" onClick="location.href='http://camp-fire.jp'">
+</div>
+
+<button type="btn" onclick="window.location.href='#div-modal'" type="button" data-toggle="modal" data-target="#div-modal">質問してみる</button>
+</div>
+		</div>
+		<div class="list grid-4">
+		
+			<img src="img/natsuno.jpg" height="155" width="155" alt="">
+			
+			<h2><a href="https://twitter.com/tnatsu" target="_blank">夏野剛氏</a></h2>
+			
+			<p>11月29日　21時〜</p>
+<div class="row" style="text-align: center">
+<div class="col-md-12"  style="margin-bottom: 20px">
+</div>
+
+<button type="btn" onclick="window.location.href='#div-modal'" type="button" data-toggle="modal" data-target="#div-modal">質問してみる</button>
+</div>
+		</div>
+			<div class="list grid-4">
+		<img src="img/ototake.jpg" height="155" width="155" alt="">
+
+			<h2><a href="https://twitter.com/h_ototake" target="_blank">乙武洋匡氏</a></h2>
+			
+			<p>11月30日　21時〜</p>
+<div class="row" style="text-align: center">
+<div class="col-md-12"  style="margin-bottom: 20px">
+</div>
+
+<button type="btn" onclick="window.location.href='#div-modal'" type="button" data-toggle="modal" data-target="#div-modal">質問してみる</button>
+</div>		</div>
+
+
+
+
+
+
+
+<div class="row" style="text-align: center">
+<div class="col-md-12"  style="margin-bottom: 20px">
+	<Input type="button" value="ROLEを応援したい！という方はこちら" onClick="location.href='http://camp-fire.jp'">
 </div>
 </div>
 
@@ -114,27 +282,21 @@
 
 
 
-<div class="content row">
+<div align="center">
 	
 		<h2>CONTACT US</h2>
-	　　
-	　
 
+
+
+<a href="https://www.facebook.com/rolemodeljapan"><img src="img/facebook.png" height="64" width="64" alt="" vspace="20px" hspace="20px"></a>
+
+
+<a href="
+https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vspace="20px" hspace="20px" ></a>
+
+
+<a href="https://www.youtube.com"><img src="img/you_tube.png" height="64" width="64" alt="" vspace="20px" hspace="20px" ></a>
 	</div>
-
-
-
-<iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Frolemodeljapan&amp;width=600px&amp;height=600px&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=799081623490030" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:600px;" allowTransparency="true"></iframe>
-
-<a class="twitter-timeline" href="https://twitter.com/role_model1999" data-widget-id="531790642456707073">@role_model1999 からのツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-	<foter class="mainFooter" class="clearfix">
-		<p>2014 <a href="rolemodel.jp" target="_blank">ROLE MODEL</a>.</p>
-	</foter>
-</div>
-  
 
 
 
