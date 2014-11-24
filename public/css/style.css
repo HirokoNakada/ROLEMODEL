@@ -2,10 +2,10 @@
   全体のCSSのCSS設定
 **/
 body {
-  font-family:'Glober','Rounded-X M+ 2p';
+  font-family:'Gill Sans','Rounded-X M+ 2p';
   font-size: 16px;
-  color:#f9686f;
-  background-color:#fff;
+  color:#000000;
+  background-color:#ffffff;
 
 }
 
@@ -18,7 +18,7 @@ li{
 **/
 a {
   text-decoration: none;
-  font-family:'Glober','Rounded-X M+ 2p';
+  font-family:'Gill Sans','Rounded-X M+ 2p';
   color:#000;
 }
 
@@ -36,6 +36,24 @@ a:hover {
   height: 100%;
 }
 
+.btn {
+  background-color:#000000;
+  color:#fff;
+  font-family:'Gill Sans';
+  margin-bottom:20px;
+}
+
+.btn1{
+  background-color:#fff;
+  color:#000000;
+  font-family:'Gill Sans';
+  font-size:25px;
+}
+
+.form-control{
+  width:450px;
+
+}
 
 
 /**
@@ -58,6 +76,7 @@ a:hover {
   height: 80px;
   text-align: center;
   z-index: 5;
+  background-color: #fff;
 }
 /**
   サイト名のCSS設定
@@ -118,14 +137,14 @@ a:hover {
   margin: 0;
   padding: 40px 0;
   text-align: center;
-  font-family:'Glober','Rounded-X M+ 2p';
+  font-family:'Gill Sans','Rounded-X M+ 2p';
 
 
 }
 .content >p{
   text-align: center;
   font-size:70px;
-  font-family:"Glober";
+  font-family:"Gill Sans";
   color:#777;
 }
 /**
@@ -179,7 +198,7 @@ a:hover {
 
 
 h2{
-  font-family:"Glober";
+  font-family:"Gill Sans";
   font-size:30px;
 
 }

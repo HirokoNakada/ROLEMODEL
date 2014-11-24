@@ -65,3 +65,18 @@ FB.getLoginStatus(function (response) {
 };
 
 
+var checked = $('#checkbox').prop('checked');   // => checked は true
+
+var checked2 = $('#checkbox2').prop('checked');   // => checked は false
+
+$("loginBtn").click(function () {
+    Parse.User.logIn("ユーザ名", "パスワード", {
+    success: function(user) {
+      window.location.href = 'bootstrap_form.html';
+    },
+    error: function(user, error) {
+      // The login failed. Check error to see why.
+    }
+});
+
+});

@@ -7,12 +7,12 @@
 	<meta charset="utf-8">
 	<title>ROLE MODEL</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/setting.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/setting.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.1.min.js"></script>
   <script src="js/main.js"></script>
   
@@ -28,11 +28,17 @@
 			<nav class="mainNav">
 		
 				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="menu01.html">ABOUT</a></li>
-					<li><a href="menu02.html">INTERVIEW</a></li>
-					<li><a href="menu03.html">CONTACT US</a></li>
-					<li><a href="menu03.html">会員登録</a></li>
+
+          <a href="https://www.facebook.com/rolemodeljapan"><img src="img/facebook.png" height="45"width="45" alt="" vspace="20px" hspace="20px"></a>
+
+
+          <a href="https://twitter.com"><img src="img/twitter.png" height="45" width="45" alt="" vspace="20px" hspace="20px" ></a>
+
+
+          <a href="https://www.youtube.com"><img src="img/youtube.png" height="45" width="45" alt="" vspace="20px" hspace="20px" ></a>
+
+          <button class="btn btn-custom btn-lg pull-center" type="btn" onclick="window.location.href='#div-modal'" data-toggle="modal" data-target="#div-modal" id="submit_btn">会員登録</button>
+
 
 				</ul>
 			</nav>
@@ -49,16 +55,19 @@
     </div>
 
 
+
 	</div>
 	</div>
 	</header>
 
 
 
+
+
   	<div class="black">
 	<div class="content row">
 	
-		<h2>ABOUT  ROLE</h2>
+		<h2>ABOUT</h2>
 		<div class="list grid-12">
 		<p style="text-align: center;">
 		
@@ -72,7 +81,7 @@
   	<div class="black">
 	<div class="content row">
 	
-		<h1>第1回インタビューしました！</h1>
+		<h1>ARCHIVE</h1>
 
 
 		</div>
@@ -87,13 +96,12 @@
  
   <ul class="list"　>
     <li>
-     <p><a href="http://www.cinra.net/interview/201411-interstellar"><img src="img/INTERVIEW/yajimasanonly2.png" alt="矢島里佳氏が語る中高生の時にやっていた方がいいことって？" /></a></p>
+     <p><a href="interview.html"><img src="img/INTERVIEW/yajimasanonly2.png" alt="矢島里佳氏が語る中高生の時にやっていた方がいいことって？" /></a></p>
     </li>
 
 </div>
 
-<div class="row" style="text-align: center">
-<button type="btn" onclick="window.location.href='#div-modal'" type="button" data-toggle="modal" data-target="#div-modal">会員登録</button>
+
 <!-- モーダルウィンドウの本体 -->
 
 <div id="div-modal" class="modal fade"> 
@@ -122,18 +130,18 @@
           </div>
 
           <div class="form-group">
-            <label for="email">メールアドレス</label>
+            <label for="email">メールアドレス</label><span class="text-danger">※必須</span>
             <input type="email" id="email" placeholder="メールアドレスを入力してください" class="form-control">
           </div>
 
           <div class="form-group">
-            <label for="pass">パスワード</label>
+            <label for="pass">パスワード</label><span class="text-danger">※必須</span>
             <input type="password" class="form-control" id="pass" placeholder="パスワードを入力してください">
             <span class="help-block">パスワードは最低6文字以上を設定してください</span>
           </div>
 
              <div class="form-group">
-            <label for="age">学年</label>
+            <label for="age">学年</label><span class="text-danger">※必須</span>
             <select class="form-control" id="age">
               <option value="中学1年生">中学1年生</option>
               <option value="中学2年生">中学2年生</option>
@@ -149,7 +157,7 @@
 
          
           <div class="form-group">
-            <label for="gender">性別</label>
+            <label for="gender">性別</label><span class="text-danger">※必須</span>
             <div class="radio">
               <label><input type="radio" name="gender" value="">男性</label>
               <label><input type="radio" name="gender" value="">女性</label>
@@ -157,7 +165,7 @@
           </div>
 
           <div class="form-group">
-            <label for="area">お住まいの地域</label>
+            <label for="area">お住まいの地域</label><span class="text-danger">※必須</span>
             <select class="form-control" id="area">
               <option value="北海道・東北">北海道・東北</option>
               <option value="北陸">北陸</option>
@@ -175,7 +183,8 @@
 
           <div class="form-group">
             <div class="checkbox">
-              <label><input type="checkbox" value="">プライバシーポリシーに同意する</label>
+             <label><input id="checkbox"  type="checkbox" name="one" value="1" checked="checked">プライバシーポリシーに同意する</label>
+
             </div>
           </div>
 
@@ -193,7 +202,7 @@ https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vs
        </div>
          <div class="modal-footer">
            <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-           <button type="button" class="btn btn-primary">登録</button>
+           <button type="button" class="btn btn-primary" id="tourokuBtn"><a href ="index2.html">登録</button>
          </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -205,10 +214,10 @@ https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vs
 <div class="content row">
 		<!-- メニュー
 			================================================== -->
-		<h1>LIVEインタビュー配信予定</h1>
+		<h1>PICK UP! INTERVIEW</h1>
 		<div class="list grid-4">
 		
-			<img src="img/mogi.jpg" height="155" width="155" alt="">
+			<img src="img/mogi.png" height="100" width="100" alt="">
 			
 			<h2><a href="https://twitter.com/kenichiromogi" target="_blank">茂木健一郎氏</a></h2>
 			
@@ -216,13 +225,12 @@ https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vs
 <div class="row" style="text-align: center">
 <div class="col-md-12"  style="margin-bottom: 20px">
 </div>
-
-<button type="btn" onclick="window.location.href='#div-modal'" type="button" data-toggle="modal" data-target="#div-modal">質問してみる</button>
+<button class="btn btn-custom btn-lg pull-center" type="btn" onclick="window.location.href='#div-modal'" data-toggle="modal" data-target="#div-modal" id="submit_btn">質問する</button>
 </div>
 		</div>
 		<div class="list grid-4">
 		
-			<img src="img/natsuno.jpg" height="155" width="155" alt="">
+			<img src="img/natsuno.png" height="100" width="100" alt="">
 			
 			<h2><a href="https://twitter.com/tnatsu" target="_blank">夏野剛氏</a></h2>
 			
@@ -230,12 +238,12 @@ https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vs
 <div class="row" style="text-align: center">
 <div class="col-md-12"  style="margin-bottom: 20px">
 </div>
+<button class="btn btn-custom btn-lg pull-center" type="btn" onclick="window.location.href='#div-modal'" data-toggle="modal" data-target="#div-modal" id="submit_btn">質問する</button>
 
-<button type="btn" onclick="window.location.href='#div-modal'" type="button" data-toggle="modal" data-target="#div-modal">質問してみる</button>
 </div>
 		</div>
 			<div class="list grid-4">
-		<img src="img/ototake.jpg" height="155" width="155" alt="">
+		<img src="img/ototake.png" height="100" width="100" alt="">
 
 			<h2><a href="https://twitter.com/h_ototake" target="_blank">乙武洋匡氏</a></h2>
 			
@@ -244,7 +252,8 @@ https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vs
 <div class="col-md-12"  style="margin-bottom: 20px">
 </div>
 
-<button type="btn" onclick="window.location.href='#div-modal'" type="button" data-toggle="modal" data-target="#div-modal">質問してみる</button>
+<button class="btn btn-custom btn-lg pull-center" type="btn" onclick="window.location.href='#div-modal'" data-toggle="modal" data-target="#div-modal" id="submit_btn">質問する</button>
+
 </div>		</div>
 
 
@@ -255,9 +264,13 @@ https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vs
 
 <div class="row" style="text-align: center">
 <div class="col-md-12"  style="margin-bottom: 20px">
-	<Input type="button" value="ROLEを応援したい！という方はこちら" onClick="location.href='http://camp-fire.jp'">
+<button class="btn1 btn-custom btn-lg pull-center" type="btn" onclick="https://www.makuake.com" >ROLE MODELを応援したいという方はこちら</button>
+
 </div>
 </div>
+
+
+
 
 	<div class="content row">
 
@@ -270,7 +283,8 @@ https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vs
 <div class="sixth animated fadeInDown" data-animated="fadeInDown">
 <div class="row" style="text-align: center">
 <div class="col-md-12" style="margin-bottom: 20px">
-                    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control placeholder" id="email" aria-required="true" aria-invalid="false" placeholder="E-mail" /></span>
+<div align="center">
+                    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="30" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control placeholder" id="email" aria-required="true" aria-invalid="false" placeholder="E-mail" /></span>
                   </div>
 <div class="col-md-12"  style="margin-bottom: 20px">
 					<button class="btn btn-custom btn-lg pull-center" id="submit_btn">Submit</button>
@@ -278,27 +292,18 @@ https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vs
 </p></div>
 
 
-
-
-<div align="center">
 	
-		<h2>CONTACT US</h2>
-
-
-
-<a href="https://www.facebook.com/rolemodeljapan"><img src="img/facebook.png" height="64" width="64" alt="" vspace="20px" hspace="20px"></a>
-
-
-<a href="
-https://twitter.com"><img src="img/twitter.png" height="64" width="64" alt="" vspace="20px" hspace="20px" ></a>
-
-
-<a href="https://www.youtube.com"><img src="img/you_tube.png" height="64" width="64" alt="" vspace="20px" hspace="20px" ></a>
-	</div>
 
 
 
 <div id="fb-root"></div>
+
+<div class="row clear">
+      <div class="col col-12 tablet-col-full mobile-full">
+        <p class="center-text">Copyright © ROLE MODEL. All Rights Reserved.</p>
+      </div>
+    </div>
+
 
 
 </body>
