@@ -64,6 +64,7 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
   text-align: center;
+  color:#6ECFC2;
 }
 
 /**
@@ -219,7 +220,6 @@ textarea {
   /* 1 */
   font-size: 150%;
   padding:0px;
-
   margin:20px;
   padding-left:50px;
   padding-right:50px;

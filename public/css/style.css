@@ -19,7 +19,7 @@ li{
 a {
   text-decoration: none;
   font-family:'Gill Sans','Rounded-X M+ 2p';
-  color:#000;
+  color:#fff;
 }
 
 dd{
@@ -57,7 +57,9 @@ a:hover {
 
 }
 
-
+p{
+  text-align:center;
+}
 /**
   固定ヘッダーのCSS設定
 **/
@@ -87,6 +89,7 @@ a:hover {
   float: left;
   font-size: 20px;
   line-height: 50px;
+  color:#6ECFC2;
 }
 .mainHeader h1 img {
   display: block;
