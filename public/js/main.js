@@ -104,19 +104,40 @@ var age = ageSelect.text()
 // ラジオボタンから取得する方法
 var radioButton = $("input:radio[name=gender]:checked");
 var gender = radioButton.val();     // => "male" と返ってくるので注意！
- input:radio
- [name=gender]
- :checked
+
  // Parse 上に新しいオブジェクト（テーブル）を作る（型を作るイメージ）
 var name = Parse.Object.extend("name");
 var name = Parse.Object.extend("email");
 var name = Parse.Object.extend("password");
-var name = Parse.Object.extend("prefecture");
+var name = Parse.Object.extend("area");
 var name = Parse.Object.extend("age");
 
 
  var User = Parse.Object.extend("User");
+ var user = new Parse.User();
+user.set("name", name);
+var user = new Parse.User();
+user.set("email", name);
+var user = new Parse.User();
+user.set("password", name);
+var user = new Parse.User();
+user.set("area", name);
+var user = new Parse.User();
+user.set("age", name);
 
+
+
+user.signUp(null, {
+  success: function(user) {
+    ご登録ありがとうございます。// Hooray! Let them use the app now.
+  },
+  error: function(user, error) {
+    もう一度試して下さい。// Show the error message somewhere and let the user try again.
+    alert("Error: " + error.code + " " + error.message);
+  }
+
+
+});
  // submitBtn は登録ページの送信ボタン
   if (submitBtn.length) {
     submitBtn.click(function () {
@@ -126,6 +147,7 @@ var name = Parse.Object.extend("age");
       
     });
   }
+
 
 
 
@@ -147,3 +169,5 @@ $("loginBtn").click(function () {
 });
 
 });
+
+
