@@ -65,6 +65,73 @@ FB.getLoginStatus(function (response) {
 };
 
 
+
+
+$(function () {
+  //    :
+  // 他の処理
+  //    :
+
+  // ボタンを選んでくる
+  var submitBtn = $("#submit-button");
+
+  // ボタンがあるかチェック
+  if (submitBtn.length) {
+    submitBtn.click(function () {
+      // ボタンを押した時の処理
+    });
+  }
+});
+
+ // テキストボックスの値
+var nameField = $("#name");
+var name = nameField.val();
+
+var textField = $("email");
+var email = textField.val();
+
+var passField = $("password");
+var pass = passField.val();
+
+// Select タグの値
+var areaSelect = $("#area");
+var area = areaSelect.text()
+
+var ageSelect = $("#age");
+var age = ageSelect.text()
+
+
+// ラジオボタンから取得する方法
+var radioButton = $("input:radio[name=gender]:checked");
+var gender = radioButton.val();     // => "male" と返ってくるので注意！
+ input:radio
+ [name=gender]
+ :checked
+ // Parse 上に新しいオブジェクト（テーブル）を作る（型を作るイメージ）
+var name = Parse.Object.extend("name");
+var name = Parse.Object.extend("email");
+var name = Parse.Object.extend("password");
+var name = Parse.Object.extend("prefecture");
+var name = Parse.Object.extend("age");
+
+
+ var User = Parse.Object.extend("User");
+
+ // submitBtn は登録ページの送信ボタン
+  if (submitBtn.length) {
+    submitBtn.click(function () {
+      // ボタンを押した時の処理
+      var User = Parse.Object.extend("User");
+      // ↓ここから下に値を設定＋保存をする
+      
+    });
+  }
+
+
+
+
+
+
 var checked = $('#checkbox').prop('checked');   // => checked は true
 
 var checked2 = $('#checkbox2').prop('checked');   // => checked は false
@@ -72,7 +139,7 @@ var checked2 = $('#checkbox2').prop('checked');   // => checked は false
 $("loginBtn").click(function () {
     Parse.User.logIn("ユーザ名", "パスワード", {
     success: function(user) {
-      window.location.href = 'bootstrap_form.html';
+      window.location.href = 'index2.html';
     },
     error: function(user, error) {
       // The login failed. Check error to see why.
