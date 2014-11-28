@@ -78,19 +78,14 @@ $(function () {
   // ボタンがあるかチェック
   if (submitBtn.length) {
     submitBtn.click(function () {
-      // ボタンを押した時の処理
-    });
-  }
-});
-
- // テキストボックスの値
+       // テキストボックスの値
 var nameField = $("#name");
 var name = nameField.val();
 
-var textField = $("email");
+var textField = $("#email");
 var email = textField.val();
 
-var passField = $("password");
+var passField = $("#password");
 var pass = passField.val();
 
 // Select タグの値
@@ -100,31 +95,11 @@ var area = areaSelect.text()
 var ageSelect = $("#age");
 var age = ageSelect.text()
 
-
-// ラジオボタンから取得する方法
-var radioButton = $("input:radio[name=gender]:checked");
-var gender = radioButton.val();     // => "male" と返ってくるので注意！
-
- // Parse 上に新しいオブジェクト（テーブル）を作る（型を作るイメージ）
-var name = Parse.Object.extend("name");
-var name = Parse.Object.extend("email");
-var name = Parse.Object.extend("password");
-var name = Parse.Object.extend("area");
-var name = Parse.Object.extend("age");
-
-
- var User = Parse.Object.extend("User");
- var user = new Parse.User();
-user.set("name", name);
-
-
-
-
-
 user.signUp(null, {
   success: function(user) {
    var messageField = $("#message");
 messageField.text("ご登録ありがとうございます。");
+window.location.replace("index2.html");
   },
   error: function(user, error) {
     alert("Error: " + error.code + " " + error.message);
@@ -132,6 +107,29 @@ messageField.text("ご登録ありがとうございます。");
 
 
 });
+
+    });
+  }
+});
+
+
+
+// ラジオボタンから取得する方法
+var radioButton = $("input:radio[name=gender]:checked");
+var gender = radioButton.val();     // => "male" と返ってくるので注意！
+
+
+
+ var User = Parse.Object.extend("User");
+ var user = new Parse.User();
+user.set("name", name);
+user.set("email", email);
+user.set("password", password);
+user.set("area", area);
+user.set("age", age);
+
+
+
  // submitBtn は登録ページの送信ボタン
   if (submitBtn.length) {
     submitBtn.click(function () {
@@ -141,11 +139,6 @@ messageField.text("ご登録ありがとうございます。");
       
     });
   }
-
-
-
-
-
 
 
 var checked = $('#checkbox').prop('checked');   // => checked は true
@@ -170,7 +163,7 @@ $("loginBtn").click(function () {
 
 
 
-
+//----------------------パララックス----------------------//
 
 jQuery.event.add(window,"load",function(){
  
