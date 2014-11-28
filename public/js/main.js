@@ -73,7 +73,7 @@ $(function () {
   //    :
 
   // ボタンを選んでくる
-  var submitBtn = $("#submit-button");
+var submitBtn = $("#tourokuBtn");
 
   // ボタンがあるかチェック
   if (submitBtn.length) {
@@ -122,7 +122,7 @@ var gender = radioButton.val();     // => "male" と返ってくるので注意�
 
  var User = Parse.Object.extend("User");
  var user = new Parse.User();
-user.set("name", name);
+user.set("username", name);
 user.set("email", email);
 user.set("password", password);
 user.set("area", area);
