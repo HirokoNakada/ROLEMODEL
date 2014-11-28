@@ -86,7 +86,7 @@ var textField = $("#email");
 var email = textField.val();
 
 var passField = $("#password");
-var pass = passField.val();
+var password = passField.val();
 
 // Select タグの値
 var areaSelect = $("#area");
