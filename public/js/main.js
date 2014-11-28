@@ -95,6 +95,16 @@ var area = areaSelect.text()
 var ageSelect = $("#age");
 var age = ageSelect.text()
 
+ var User = Parse.Object.extend("User");
+ var user = new Parse.User();
+user.set("username", name);
+user.set("email", email);
+user.set("password", password);
+user.set("area", area);
+user.set("age", age);
+
+
+
 user.signUp(null, {
   success: function(user) {
    var messageField = $("#message");
@@ -117,16 +127,6 @@ window.location.replace("index2.html");
 // ラジオボタンから取得する方法
 var radioButton = $("input:radio[name=gender]:checked");
 var gender = radioButton.val();     // => "male" と返ってくるので注意！
-
-
-
- var User = Parse.Object.extend("User");
- var user = new Parse.User();
-user.set("username", name);
-user.set("email", email);
-user.set("password", password);
-user.set("area", area);
-user.set("age", age);
 
 
 
