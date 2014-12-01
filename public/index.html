@@ -18,6 +18,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
 <script src="js/ScrollTween.js"></script>
+<script type="text/javascript" src="js/jquery.balloon.js"></script>
   
 </head>
 <body>
@@ -43,6 +44,8 @@
           <a href="https://www.youtube.com"><img src="img/you_tube.png" height="45" width="45" alt="" vspace="20px" hspace="20px" ></a>
 
           <button class="btn btn-custom btn-lg pull-center" type="btn" onclick="window.location.href='#div-modal'" data-toggle="modal" data-target="#div-modal" id="submit_btn">会員登録</button>
+
+           <button class="btn btn-custom btn-lg pull-center" type="btn" onclick="window.location.href='#div-modal'" data-toggle="modal" data-target="#div-modal1" id="submit_btn">ログイン</button>
 
 
 
@@ -73,10 +76,15 @@
 
   	<div class="black">
 	<div class="content row">
-	
-		<h2>WHAT'S <br>ROLEMODEL?</h2>
+	   <h2 style="text-align: center;">
+		<a href="about.html"><h2>WHAT'S <br>ROLEMODEL?</h2></a>
+
+
 
 		<p style="text-align: center;">
+
+
+
 		
       </p>
 		</div>
@@ -84,10 +92,7 @@
 
   	<div class="black">
 	<div class="content row">
-	
 		<h1>PICK UP!</h1>
-
-
 		</div>
 
 
@@ -98,10 +103,25 @@
 
  <div class="recommend pickup" style="taxt-align: center">
  
-  <ul class="list"　>
-    <li>
-     <p><a href="interview.html"><img src="img/INTERVIEW/yajimasanonly2.png" alt="矢島里佳氏が語る中高生の時にやっていた方がいいことって？" /></a></p>
-    </li>
+
+<div class="view view-second">
+    <img src="img/INTERVIEW/yajimasanonly2.png" />
+    <div class="mask"></div>
+    <div class="content">
+        <h2>矢島里佳氏</h2>
+        <p>【自己紹介】<br>
+19歳のときの衝撃的な職人さんとの出逢い。職人さんの連載を雑誌で3年間続けました。<br>そしていつの日からか「日本の伝統を、21世紀の子どもたちに繋ぎたい」という想いで活動を始めていました。<br>職人さんの技術を活かした、０〜６歳の子どもたちのためのオリジナルブランドを作ろうと思い、<br>大学卒業と同時に株式会社和える（aeru）を立ち上げました。
+<br>
+和えるWEB：http://a-eru.co.jp
+<br>
+'07年「TVチャンピオン２ なでしこ礼儀作法王選手権」優勝（テレビ東京）
+<br>
+'09年「キャンパスベンチャーグランプリ2009」特別賞 東京産業人クラブ賞受賞（日刊工業新聞）
+<br>
+'10年「学生起業家選手権」優勝（東京都）</p>
+        <a href="#" class="info">Read More</a>
+    </div>
+</div>
 
 </div>
 
@@ -214,15 +234,117 @@ https://twitter.com"><img src="img/twitter1.png" height="64" width="64" alt="" v
 
 
 
+<div id="div-modal1" class="modal fade"> 
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">ログイン</h4>
+      </div>
+       <div class="modal-body">
+          <div class="container">
+
+ 
+      <div class="panel-body"　width="100px">
+
+        <form action="">
+
+          <div class="form-group">
+            
+          </div>
+
+                   <div class="form-group">
+            <label for="name">ニックネーム</label> <span class="text-danger">※必須</span>
+            <input type="text" id="name" placeholder="お名前を入力してください" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="email">メールアドレス</label><span class="text-danger">※必須</span>
+            <input type="email" id="email" placeholder="メールアドレスを入力してください" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="password">パスワード</label><span class="text-danger">※必須</span>
+            <input type="password" class="form-control" id="password" placeholder="パスワードを入力してください">
+            <span class="help-block">パスワードは最低6文字以上を設定してください</span>
+          </div>
+
+             <div class="form-group">
+            <label for="age">学年</label><span class="text-danger">※必須</span>
+            <select class="form-control" id="age">
+              <option value="中学1年生">中学1年生</option>
+              <option value="中学2年生">中学2年生</option>
+              <option value="中学3年生">中学3年生</option>
+              <option value="高校1年生">高校1年生</option>
+              <option value="高校2年生">高校2年生</option>
+              <option value="高校3年生">高校3年生</option>
+            
+             
+            </select>
+          </div>
+
+
+         
+          <div class="form-group">
+            <label for="gender">性別</label><span class="text-danger">※必須</span>
+            <div class="radio">
+              <label><input type="radio" name="gender" value="">男性</label>
+              <label><input type="radio" name="gender" value="">女性</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="area">お住まいの地域</label><span class="text-danger">※必須</span>
+            <select class="form-control" id="area">
+              <option value="北海道・東北">北海道・東北</option>
+              <option value="北陸">北陸</option>
+              <option value="甲信越">甲信越</option>
+              <option value="関東">関東</option>
+              <option value="中部">中部</option>
+              <option value="関西">関西</option>
+              <option value="中国">中国</option>
+              <option value="四国">四国</option>
+              <option value="九州・沖縄">九州・沖縄</option>
+            </select>
+          </div>
+
+       
+
+          <div class="form-group">
+           
+
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+  </div>
+  <!-- /.container -->
+       </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-primary" id="tourokuBtn"><a href ="index2.html">ログイン</button>
+         </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+
+</div>
+
+
+
+
+
 <div class="content row">
 		<!-- メニュー
 			================================================== -->
 		<h1>INTERVIEW</h1>
 		<div class="list grid-4">
 		
-			<img src="img/mogi.png" height="100" width="100" alt="">
+			<img src="img/.png" height="100" width="100" alt="">
 			
-			<h2><a href="https://twitter.com/kenichiromogi" target="_blank">茂木健一郎氏</a></h2>
+			<h2><a href="https://twitter.com/kenichiromogi" target="_blank">氏</a></h2>
 			
 			<p>11月27日　20時〜</p>
 <div class="row" style="text-align: center">
@@ -233,9 +355,9 @@ https://twitter.com"><img src="img/twitter1.png" height="64" width="64" alt="" v
 		</div>
 		<div class="list grid-4">
 		
-			<img src="img/natsuno.png" height="100" width="100" alt="">
+			<img src="img/.png" height="100" width="100" alt="">
 			
-			<h2><a href="https://twitter.com/tnatsu" target="_blank">夏野剛氏</a></h2>
+			<h2><a href="https://twitter.com/tnatsu" target="_blank">氏</a></h2>
 			
 			<p>11月29日　21時〜</p>
 <div class="row" style="text-align: center">
@@ -246,9 +368,9 @@ https://twitter.com"><img src="img/twitter1.png" height="64" width="64" alt="" v
 </div>
 		</div>
 			<div class="list grid-4">
-		<img src="img/ototake.png" height="100" width="100" alt="">
+		<img src="img/.png" height="100" width="100" alt="">
 
-			<h2><a href="https://twitter.com/h_ototake" target="_blank">乙武洋匡氏</a></h2>
+			<h2><a href="https://twitter.com/h_ototake" target="_blank">氏</a></h2>
 			
 			<p>11月30日　21時〜</p>
 <div class="row" style="text-align: center">
