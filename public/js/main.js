@@ -146,7 +146,14 @@ var checked = $('#checkbox').prop('checked');   // => checked は true
 var checked2 = $('#checkbox2').prop('checked');   // => checked は false
 
 $("loginBtn").click(function () {
-    Parse.User.logIn("ユーザ名", "パスワード", {
+
+    var textField = $("#loginemail");
+    var email = textField.val();
+
+    var passField = $("#loginpassword");
+    var password = passField.val();
+
+    Parse.User.logIn(email,password, {
     success: function(user) {
       window.location.href = 'index2.html';
     },
