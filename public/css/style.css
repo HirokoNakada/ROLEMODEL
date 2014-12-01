@@ -270,7 +270,7 @@ html, body {
     font-size: 17px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0
+    margin: 20px 0 0 0;
 }
 .view p {
     font-family:'Rounded-X M+ 2p';
@@ -278,7 +278,9 @@ html, body {
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
-    text-align: center
+    text-align: center;
+    opacity: 0;
+
 }
 .view a.info {
     display: inline-block;
@@ -287,10 +289,16 @@ html, body {
     background: #000;
     color: #fff;
     text-transform: uppercase;
-    box-shadow: 0 0 1px #000
+    box-shadow: 0 0 1px #000;
+    opacity: 0;
 }
 .view a.info:hover {
-    box-shadow: 0 0 5px #000
+    box-shadow: 0 0 5px #000;
+}
+
+.view:hover p,
+.view:hover a {
+  opacity: 1;
 }
 
 .view-second img {  

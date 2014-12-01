@@ -120,32 +120,8 @@ window.location.replace("index2.html");
 
     });
   }
-});
 
-
-
-// ラジオボタンから取得する方法
-var radioButton = $("input:radio[name=gender]:checked");
-var gender = radioButton.val();     // => "male" と返ってくるので注意！
-
-
-
- // submitBtn は登録ページの送信ボタン
-  if (submitBtn.length) {
-    submitBtn.click(function () {
-      // ボタンを押した時の処理
-      var User = Parse.Object.extend("User");
-      // ↓ここから下に値を設定＋保存をする
-      
-    });
-  }
-
-
-var checked = $('#checkbox').prop('checked');   // => checked は true
-
-var checked2 = $('#checkbox2').prop('checked');   // => checked は false
-
-$("loginBtn").click(function () {
+  $("#loginBtn").click(function () {
 
     var textField = $("#loginemail");
     var email = textField.val();
@@ -154,15 +130,21 @@ $("loginBtn").click(function () {
     var password = passField.val();
 
     Parse.User.logIn(email,password, {
-    success: function(user) {
-      window.location.href = 'index2.html';
-    },
-    error: function(user, error) {
+      success: function(user) {
+        window.location.href = 'index2.html';
+      },
+      error: function(user, error) {
       // The login failed. Check error to see why.
-    }
-});
+      }
+    });
+
+  });
 
 });
+
+
+
+
 
 $('a').balloon();
 
