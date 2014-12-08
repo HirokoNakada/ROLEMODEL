@@ -89,10 +89,10 @@ var passField = $("#password");
 var password = passField.val();
 
 // Select タグの値
-var areaSelect = $("#area");
+var areaSelect = $("#area option:selected");
 var area = areaSelect.text()
 
-var ageSelect = $("#age");
+var ageSelect = $("#age option:selected");
 var age = ageSelect.text()
 
  var User = Parse.Object.extend("User");
@@ -140,28 +140,43 @@ window.location.replace("index2.html");
 
   });
 
-$("#sendemail_btn").click(function (){
+  $("#sendemail_btn").click(function (){
 
-  var emailField = $("#sendemail");
-  var email = emailField.val();
+    var emailField = $("#sendemail");
+    var email = emailField.val();
 
-  var params = { "email": email };
+    var params = { "email": email };
 
-Parse.Cloud.run("sendemail", params, {
-  success: function(result) {
-    // 成功した場合の処理
-    // result には 'Hello Daisuke Shimamoto!' って入ってるはず。
-    console.log(result);
-  },
-  error: function(error) {
-    // エラーした場合の処理
-  }
+    Parse.Cloud.run("sendemail", params, {
+      success: function(result) {
+        // Parse Object の派生クラスを作る。
+        var Subscriber = Parse.Object.extend("Subscriber");
+
+        // インスタンスを作る
+        var subs = new Subscriber();
+
+        // 情報を設定する
+        subs.set("email", email);
+
+        // 保存する
+        subs.save();
+        // 成功した場合の処理
+        // result には 'Hello Daisuke Shimamoto!' って入ってるはず。
+        alert("購読しました。");
+        console.log(result);
+      },
+      error: function(error) {
+        // エラーした場合の処理
+      }
+    });
+
+
+  });
+  $("#fbtouroku").click(function(){
+   loginfacebook();
+
+  });
 });
-
-
-});
-});
-
 
 
 

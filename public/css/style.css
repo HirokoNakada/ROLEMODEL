@@ -238,7 +238,8 @@ html, body {
 
 
 .view {
-
+    width: 1070px;
+    height: 570px;
     margin: 10px;
     float: left;
     border: 10px solid #fff;
