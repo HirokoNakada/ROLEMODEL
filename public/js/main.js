@@ -11,18 +11,6 @@
 
 
    Parse.initialize("EypdoI1hRR9e2CCHlllrB6ZvYYGxjfRmXCQGQQ4q", "w2RfaOy33TNnRWjsjcbyzvmRkmb3k7sPoTSyOwAS");
-
-  window.fbAsyncInit = function() {
-    Parse.FacebookUtils.init({ // this line replaces FB.init({
-        appId      : '799081623490030', // Facebook App ID
-        status     : true, // Facebook ログインステータス
-        cookie     : true, // クッキー
-        xfbml      : true,
-        version    : 'v2.1'
-    });
-
-  // Facebook の SDK を読み込んだ後の処理をここに書く。
-
 function parseLoginUsingFB() {
     console.log("Logging in using Facebook.");
 
@@ -41,7 +29,7 @@ function parseLoginUsingFB() {
         }
     });
 };
-
+function loginfacebook(){
 FB.getLoginStatus(function (response) {
     if (response.status === "connected") {    // 既にログインしている
         parseLoginUsingFB();
@@ -61,6 +49,18 @@ FB.getLoginStatus(function (response) {
         });
     }
 });
+}
+  window.fbAsyncInit = function() {
+    Parse.FacebookUtils.init({ // this line replaces FB.init({
+        appId      : '799081623490030', // Facebook App ID
+        status     : true, // Facebook ログインステータス
+        cookie     : true, // クッキー
+        xfbml      : true,
+        version    : 'v2.1'
+    });
+
+  // Facebook の SDK を読み込んだ後の処理をここに書く。
+
 
 };
 
@@ -140,13 +140,27 @@ window.location.replace("index2.html");
 
   });
 
+$("#sendemail_btn").click(function (){
+
+  var emailField = $("#sendemail");
+  var email = emailField.val();
+
+  var params = { "email": email };
+
+Parse.Cloud.run("sendemail", params, {
+  success: function(result) {
+    // 成功した場合の処理
+    // result には 'Hello Daisuke Shimamoto!' って入ってるはず。
+    console.log(result);
+  },
+  error: function(error) {
+    // エラーした場合の処理
+  }
 });
 
 
-
-
-
-$('a').balloon();
+});
+});
 
 
 

@@ -18,7 +18,7 @@ li{
 **/
 a {
   text-decoration: none;
-  font-family:'DK Nanuk','Rounded-X M+ 2p';
+  font-family:'GillSans','Rounded-X M+ 2p';
   font-size:20px;
 
 }
@@ -142,7 +142,7 @@ p{
   margin: 0;
   padding: 40px 0;
   text-align: center;
-  font-family:'DK Nanuk','Rounded-X M+ 2p';
+  font-family:'DK Nanuk¥','Rounded-X M+ 2p';
   color:#ee6557;
 
 
@@ -238,8 +238,7 @@ html, body {
 
 
 .view {
-    width: 1070px;
-    height: 570px;
+
     margin: 10px;
     float: left;
     border: 10px solid #fff;
@@ -345,3 +344,5 @@ html, body {
     transform: translate(0px,0px); 
     transition-delay: 0.5s;
 }
+
+
