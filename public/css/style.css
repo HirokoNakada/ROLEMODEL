@@ -2,15 +2,23 @@
   全体のCSSのCSS設定
 **/
 body {
-  font-family:'Gill Sans','Rounded-X M+ 2p';
+  font-family:'GillSans','Rounded-X M+ 2p';
   font-size: 16px;
   color:#000000;
   background-color:#f5f5f5;
 
 }
 
+h1 {
+  font-size:70px;
+  margin: 0.67em 0;
+  text-align: center;
+  color:#16a6b6;
+  font-family:"GillSans";
+}
+
 li{
-  font-family:"Glober";
+  font-family:"GillSans";
   font-size:20px;
 }
 /**
@@ -24,7 +32,7 @@ a {
 }
 
 dd{
-  font-family:'Gill Sans','Rounded-X M+ 2p';
+  font-family:'GillSans','Rounded-X M+ 2p';
 }
 
 
@@ -142,7 +150,7 @@ p{
   margin: 0;
   padding: 40px 0;
   text-align: center;
-  font-family:'DK Nanuk¥','Rounded-X M+ 2p';
+  font-family:'Gill Sans','Rounded-X M+ 2p';
   color:#ee6557;
 
 
@@ -173,7 +181,7 @@ p{
   margin: 0;
   padding: 0;
   color:#000000;
-  font-family:'DK Nanuk';
+  font-family:'GillSans';
 }
 
 
@@ -204,7 +212,7 @@ p{
 
 
 h2{
-  font-family:"DK Nanuk";
+  font-family:"GillSans";
   font-size:70px;
   color:#171C61;
 
