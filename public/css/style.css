@@ -177,11 +177,11 @@ p{
 
 }
 .content .list h2, .content .list p ,p{
-  font-size: 20px;
+  font-size: 10px;
   margin: 0;
   padding: 0;
-  color:#000000;
-  font-family:'GillSans';
+  color:#fff;
+  font-family:'Rounded-X M+ 2p';
 }
 
 
@@ -353,5 +353,118 @@ html, body {
     transform: translate(0px,0px); 
     transition-delay: 0.5s;
 }
+
+
+
+/**----------------------------------------------------------------------------**/
+.view2 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(img/bgimg.jpg) no-repeat center center
+}
+.view2 .mask2 , .view2 .content {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view2 img {
+    display: block;
+    position: relative
+}
+.view2 h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 8px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+}
+.view2 p {
+    font-family:'Rounded-X M+ 2p';
+    font-size: 6px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+    opacity: 0;
+
+}
+.view2 a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    opacity: 0;
+}
+.view2 a.info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.view2:hover p,
+.view2:hover a {
+  opacity: 1;
+}
+
+.view-third img {  
+    transition: all 0.2s ease-in;
+}
+.view-third .mask2 { 
+    background-color: rgba(115,146,184, 0.7); 
+    width: 100px;
+    padding: 100px;
+    height: 300px;
+    opacity: 0;
+    transform: translate(265px, 145px) rotate(45deg);
+    transition: all 0.2s ease-in-out;
+}
+.view-third h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+    transition: all 0.2s ease-in-out;
+}
+.view-third p { 
+    transform: translate(-200px, 200px);
+    transition: all 0.2s ease-in-out;
+}
+.view-third a.info { 
+    transform: translate(0px, 100px);
+    transition: all 0.2s 0.1s ease-in-out;
+} 
+
+.view-third:hover .mask2 { 
+    opacity:1; 
+    transform: translate(-80px, -125px) rotate(45deg);
+}                             
+.view-third:hover h2 { 
+    transform: translate(0px,0px);
+    transition-delay: 0.3s; 
+}
+.view-third:hover p { 
+    transform: translate(0px,0px); 
+    transition-delay: 0.4s;
+}
+.view-third:hover a.info { 
+    transform: translate(0px,0px); 
+    transition-delay: 0.5s;
+}
+
 
 
