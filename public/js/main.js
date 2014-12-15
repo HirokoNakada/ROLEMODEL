@@ -14,14 +14,28 @@
 function parseLoginUsingFB() {
     console.log("Logging in using Facebook.");
 
-    Parse.FacebookUtils.logIn("email", {
+    Parse.FacebookUtils.logIn("email,user_location,user_birthday", {
         success: function(user) {
             if (!user.existed()) {
-                alert("User signed up and logged in through Facebook! User: " + user.id);
-                console.log(user);
+              
             } else {
-                alert("User logged in through Facebook! User: " + user.id);
+                
             }
+            FB.api('/me', function (userInfo) {
+              alert("User info" +userInfo.email);
+              var user = Parse.User.current();
+
+              user.set("email", email);     // area は Facebook から取ってくる（他には年齢とか名前とかメールとか）
+
+           　user.save(null, {
+            success: function(user) {
+            alert("Successfully updated mail.");
+            },
+            error: function (user, error) {
+               alert("Error: " + error.message);
+            }
+            });
+          });//birthdayとかも同じかんじでやる！
         },
         error: function(user, error) {
             alert("User cancelled the Facebook login or did not fully authorize.");

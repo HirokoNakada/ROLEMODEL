@@ -428,7 +428,7 @@ html, body {
     background-color: rgba(115,146,184, 0.7); 
     width: 100px;
     padding: 100px;
-    height: 300px;
+    height: 1000px;
     opacity: 0;
     transform: translate(265px, 145px) rotate(45deg);
     transition: all 0.2s ease-in-out;
@@ -451,7 +451,7 @@ html, body {
 
 .view-third:hover .mask2 { 
     opacity:1; 
-    transform: translate(-80px, -125px) rotate(45deg);
+    transform: translate(40px, -250px) rotate(75deg);
 }                             
 .view-third:hover h2 { 
     transform: translate(0px,0px);
