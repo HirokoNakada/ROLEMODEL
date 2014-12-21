@@ -13,7 +13,7 @@ h1 {
   font-size:70px;
   margin: 0.67em 0;
   text-align: center;
-  color:#16a6b6;
+  color:#000;
   font-family:"GillSans";
 }
 
@@ -28,6 +28,7 @@ a {
   text-decoration: none;
   font-family:'GillSans','Rounded-X M+ 2p';
   font-size:20px;
+  color:#000;
 
 }
 
@@ -146,12 +147,12 @@ p{
   コンテンツのタイトルのCSS設定
 **/
 .content > h2 {
-  font-size: 70px;
+  font-size: 50px;
   margin: 0;
   padding: 40px 0;
   text-align: center;
   font-family:'Gill Sans','Rounded-X M+ 2p';
-  color:#ee6557;
+  color:#000;
 
 
 }
@@ -177,10 +178,10 @@ p{
 
 }
 .content .list h2, .content .list p ,p{
-  font-size: 10px;
+  font-size:15px;
   margin: 0;
   padding: 0;
-  color:#fff;
+  color:#000;
   font-family:'Rounded-X M+ 2p';
 }
 
@@ -195,8 +196,9 @@ p{
 コンテンツタイトルのCSS設定
 **/
 .content .list h2 {
-  margin: 20px 0;
+  margin: 40px 0;
   text-align: center;
+  font-size:20px;
 }
 
 .mainFooter {
@@ -213,8 +215,8 @@ p{
 
 h2{
   font-family:"GillSans";
-  font-size:70px;
-  color:#171C61;
+  font-size:50px;
+  color:#000;
 
 }
 
@@ -416,6 +418,8 @@ html, body {
     box-shadow: 0 0 5px #000;
 }
 
+
+
 .view2:hover p,
 .view2:hover a {
   opacity: 1;
@@ -467,4 +471,84 @@ html, body {
 }
 
 
+.hovbutton {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.hovbutton::before,
+.hovbutton::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.hovbutton,
+.hovbutton::before,
+.hovbutton::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.hovbutton {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+  line-height: 48px;
+}
+.hovbutton::after {
+  top: 4px;
+  left: 4px;
+  width: 188px;
+  height: 42px;
+  border: 2px solid #333;
+  opacity: 0;
+}
+.hovbutton:hover::after {
+  opacity: 1;
+}
 
+
+.Qbutton {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.Qbutton::before,
+.Qbutton::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.Qbutton,
+.Qbutton::before,
+.Qbutton::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.Qbutton {
+  background-color: #fff;
+
+  color: #333;
+  line-height: 50px;
+}
+.Qbutton:hover {
+  border-style: dashed;
+}
