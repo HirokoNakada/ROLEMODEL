@@ -22,10 +22,11 @@ function parseLoginUsingFB() {
                 
             }
             FB.api('/me', function (userInfo) {
-              alert("User info" +userInfo.email);
               var user = Parse.User.current();
 
-              user.set("email", email);     // area は Facebook から取ってくる（他には年齢とか名前とかメールとか）
+              user.set("email", userInfo.email);
+              user.set("name", userInfo.name);
+                  // area は Facebook から取ってくる（他には年齢とか名前とかメールとか）
 
            　user.save(null, {
             success: function(user) {
@@ -135,6 +136,11 @@ window.location.replace("index2.html");
     });
   }
 
+  $("#submit_btn").click(function(){
+    console.log("success")
+
+
+  });
   $("#loginBtn").click(function () {
 
     var textField = $("#loginemail");
@@ -175,7 +181,7 @@ window.location.replace("index2.html");
         // 保存する
         subs.save();
         // 成功した場合の処理
-        // result には 'Hello Daisuke Shimamoto!' って入ってるはず。
+       
         alert("購読しました。");
         console.log(result);
       },

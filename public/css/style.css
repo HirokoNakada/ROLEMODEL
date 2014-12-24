@@ -5,16 +5,22 @@ body {
   font-family:'GillSans','Rounded-X M+ 2p';
   font-size: 16px;
   color:#000000;
-  background-color:#f5f5f5;
+  background-color:#fff;
 
 }
 
 h1 {
-  font-size:70px;
+  font-size:50px;
   margin: 0.67em 0;
   text-align: center;
   color:#000;
   font-family:"GillSans";
+  border-bottom:solid 5px
+
+}
+
+h3{
+  font-size:20px;
 }
 
 li{
@@ -41,7 +47,7 @@ dd{
   リンクをマウスオーバーしたときのCSS設定
 **/
 a:hover {
-  color:#E83828;
+  color:#dc143c;
 }
 
 .container {
@@ -49,8 +55,8 @@ a:hover {
 }
 
 .btn {
-  background-color:#171C61;
-  color:#fff;
+  background-color:#fff;
+  color:#000;
   font-family:'Gill Sans';
   margin-bottom:20px;
 }
@@ -147,11 +153,11 @@ p{
   コンテンツのタイトルのCSS設定
 **/
 .content > h2 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
   padding: 40px 0;
   text-align: center;
-  font-family:'Gill Sans','Rounded-X M+ 2p';
+  font-family:'Gill Sans';
   color:#000;
 
 
@@ -166,7 +172,7 @@ p{
   コンテンツの横並びのCSS設定
 **/
 .content .list {
-  border-right: 1px solid #eee;
+
   margin: 0;
   padding:0px 0px 40px 40px;
 }
@@ -430,8 +436,8 @@ html, body {
 }
 .view-third .mask2 { 
     background-color: rgba(115,146,184, 0.7); 
-    width: 100px;
-    padding: 100px;
+    width: 400px;
+    padding: 200px;
     height: 1000px;
     opacity: 0;
     transform: translate(265px, 145px) rotate(45deg);
@@ -473,7 +479,7 @@ html, body {
 
 .hovbutton {
   display: inline-block;
-  width: 200px;
+  width: 150px;
   height: 54px;
   text-align: center;
   text-decoration: none;
@@ -507,7 +513,7 @@ html, body {
 .hovbutton::after {
   top: 4px;
   left: 4px;
-  width: 188px;
+  width: 138px;
   height: 42px;
   border: 2px solid #333;
   opacity: 0;
@@ -552,3 +558,5 @@ html, body {
 .Qbutton:hover {
   border-style: dashed;
 }
+
+
