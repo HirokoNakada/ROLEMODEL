@@ -2,7 +2,7 @@
   全体のCSSのCSS設定
 **/
 body {
-  font-family:'GillSans','Rounded-X M+ 2p';
+  font-family:'GillSans';
   font-size: 16px;
   color:#000000;
   background-color:#fff;
@@ -27,19 +27,26 @@ li{
   font-family:"GillSans";
   font-size:20px;
 }
+
+#nav ul li{   
+    display: inline;
+    margin-right:8px;
+ } 
+
+
 /**
   リンクのCSS設定
 **/
 a {
   text-decoration: none;
-  font-family:'GillSans','Rounded-X M+ 2p';
+  font-family:'GillSans';
   font-size:20px;
   color:#000;
 
 }
 
 dd{
-  font-family:'GillSans','Rounded-X M+ 2p';
+  font-family:'GillSans';
 }
 
 
@@ -157,7 +164,7 @@ p{
   margin: 0;
   padding: 40px 0;
   text-align: center;
-  font-family:'Gill Sans';
+  font-family:'Gill Sans','ヒラギノ角ゴ Std';
   color:#000;
 
 
@@ -165,7 +172,6 @@ p{
 .content >p{
   text-align: center;
   font-size:70px;
-  font-family:"Gill Sans";
   color:#777;
 }
 /**
@@ -184,11 +190,10 @@ p{
 
 }
 .content .list h2, .content .list p ,p{
-  font-size:15px;
+  font-size:20px;
   margin: 0;
   padding: 0;
   color:#000;
-  font-family:'Rounded-X M+ 2p';
 }
 
 
@@ -289,8 +294,8 @@ html, body {
     margin: 20px 0 0 0;
 }
 .view p {
-    font-family:'Rounded-X M+ 2p';
-    font-size: 12px;
+ 
+    font-size: 18px;
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
@@ -401,7 +406,6 @@ html, body {
     margin: 20px 0 0 0;
 }
 .view2 p {
-    font-family:'Rounded-X M+ 2p';
     font-size: 6px;
     position: relative;
     color: #fff;
@@ -436,9 +440,9 @@ html, body {
 }
 .view-third .mask2 { 
     background-color: rgba(115,146,184, 0.7); 
-    width: 400px;
-    padding: 200px;
-    height: 1000px;
+    width: 800px;
+    padding: 600px;
+    height: 1200px;
     opacity: 0;
     transform: translate(265px, 145px) rotate(45deg);
     transition: all 0.2s ease-in-out;
@@ -559,4 +563,6 @@ html, body {
   border-style: dashed;
 }
 
-
+.hide{
+  display:none;
+}
