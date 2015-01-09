@@ -20,12 +20,14 @@ h1 {
 }
 
 h3{
-  font-size:20px;
+  font-size:18px;
 }
 
 li{
   font-family:"GillSans";
   font-size:20px;
+  float:left;
+
 }
 
 #nav ul li{   
@@ -54,7 +56,7 @@ dd{
   リンクをマウスオーバーしたときのCSS設定
 **/
 a:hover {
-  color:#dc143c;
+  color:#696969;
 }
 
 .container {
@@ -83,6 +85,8 @@ a:hover {
 p{
   text-align:center;
 }
+
+
 /**
   固定ヘッダーのCSS設定
 **/
@@ -223,7 +227,6 @@ p{
 }
 
 
-
 h2{
   font-family:"GillSans";
   font-size:50px;
@@ -297,7 +300,7 @@ html, body {
  
     font-size: 18px;
     position: relative;
-    color: #fff;
+    color: #f5f5f5;
     padding: 10px 20px 20px;
     text-align: center;
     opacity: 0;
@@ -326,7 +329,7 @@ html, body {
     transition: all 0.2s ease-in;
 }
 .view-second .mask { 
-    background-color: rgba(115,146,184, 0.7); 
+    background-color: rgba(169,169,169, 0.5); 
     width: 1070px;
     padding: 570px;
     height: 300px;
@@ -439,7 +442,7 @@ html, body {
     transition: all 0.2s ease-in;
 }
 .view-third .mask2 { 
-    background-color: rgba(115,146,184, 0.7); 
+    background-color: rgba(169,169,169, 0.5); 
     width: 800px;
     padding: 600px;
     height: 1200px;
@@ -514,6 +517,11 @@ html, body {
   color: #333;
   line-height: 48px;
 }
+
+.headbutton {
+  float:right;
+
+}
 .hovbutton::after {
   top: 4px;
   left: 4px;
@@ -535,6 +543,7 @@ html, body {
   text-decoration: none;
   line-height: 54px;
   outline: none;
+  border: 3.5px solid #000;
 }
 .Qbutton::before,
 .Qbutton::after {
@@ -551,6 +560,7 @@ html, body {
   box-sizing: border-box;
   -webkit-transition: all .3s;
   transition: all .3s;
+  float:right;
 }
 
 .Qbutton {
@@ -565,4 +575,12 @@ html, body {
 
 .hide{
   display:none;
+}
+
+.mainfooter{
+  background-color:#d3d3d3;
+  margin-left:-40px;
+  margin-right:-40px;
+  padding-top:40px;
+
 }
