@@ -79,6 +79,7 @@ a:hover {
 
 .form-control{
   width:450px;
+  display: inline-block;
 
 }
 
@@ -560,7 +561,7 @@ html, body {
   box-sizing: border-box;
   -webkit-transition: all .3s;
   transition: all .3s;
-  float:right;
+
 }
 
 .Qbutton {
