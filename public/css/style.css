@@ -36,6 +36,7 @@ li{
   font-family:"GillSans";
   font-size:20px;
   float:left;
+  margin-right:5px;
 
 }
 
@@ -602,9 +603,8 @@ html, body {
 }
 
 .mainfooter{
-  background-color:#d3d3d3;
-  margin-left:-40px;
-  margin-right:-40px;
-  padding-top:40px;
+  border-top:1px #000 solid;
+  padding:20px;
+
 
 }

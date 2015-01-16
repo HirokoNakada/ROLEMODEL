@@ -165,9 +165,18 @@ $(function() {
             }
         });
     });
+
     $("#fbtouroku").click(function() {
         loginfacebook();
+   
     });
+
+     $("#fblogin").click(function() {
+        loginfacebook();
+   
+    });
+
+
     $("#QuestionBtn").click(function() {
         console.log("question")
             // Simple syntax to create a new subclass of Parse.Object.
