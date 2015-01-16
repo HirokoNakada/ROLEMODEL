@@ -133,6 +133,12 @@ $(function() {
             }
         });
     });
+
+    $("#logoutBtn").click(function () {
+    Parse.User.logOut();
+
+    // ここから下にログアウト後の処理を書く。
+});
     $("#sendemail_btn").click(function() {
         var emailField = $("#sendemail");
         var email = emailField.val();
@@ -196,3 +202,8 @@ $(function() {
         //questionにセット
     });
 });
+
+  $("#div-modal2").on("shown.bs.modal", function ( e ) {
+        // ダイアログが表示された時の動作をここに書きます。
+    });
+
