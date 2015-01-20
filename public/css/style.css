@@ -27,7 +27,7 @@ h3{
 
 h4{
   font-size:25px;
-  color:#4B484D;
+  color:#fff;
   padding-bottom:30px;
   line-height:40px
 }
@@ -112,7 +112,6 @@ p{
  
   overflow: hidden;
   position: relative;
-  height:800px;
   background-color:#000;
   padding-top:80px;
 }
@@ -222,6 +221,11 @@ p{
 
 }
 
+.box-copy{
+  position:absolute;
+    z-index: 2;
+
+}
 
 .whats-box{
   background-color:#F0BA32;
@@ -247,6 +251,11 @@ p{
   text-align: center;
   background-color: #fff;
 }
+
+footer a{
+  font-size:15px;
+}
+
 
 
 h2{
@@ -284,8 +293,7 @@ html, body {
 
 
 .view {
-    width: 1070px;
-    height: 570px;
+
     margin: 10px;
     float: left;
     border: 10px solid #fff;
@@ -610,5 +618,14 @@ html, body {
 }
 
 iframe{
-  opacity:0.5;
+  opacity:0.8;
+  vertical-align: bottom;
+}
+
+.copyright{
+  text-align: right;
+}
+
+.modal-footer {
+  text-align: center;
 }

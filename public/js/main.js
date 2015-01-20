@@ -136,6 +136,11 @@ $(function() {
 
     $("#logoutBtn").click(function () {
     Parse.User.logOut();
+    {
+            success: function(user) {
+                window.location.href =
+                    'index.html';
+            },
 
     // ここから下にログアウト後の処理を書く。
 });
