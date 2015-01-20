@@ -29,6 +29,7 @@ h4{
   font-size:25px;
   color:#4B484D;
   padding-bottom:30px;
+  line-height:40px
 }
 
 
@@ -36,7 +37,6 @@ li{
   font-family:"GillSans";
   font-size:20px;
   float:left;
-  margin-right:5px;
 
 }
 
@@ -607,4 +607,8 @@ html, body {
   padding:20px;
 
 
+}
+
+iframe{
+  opacity:0.5;
 }

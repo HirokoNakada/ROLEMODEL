@@ -184,31 +184,34 @@ $(function() {
         // Create a new instance of that class.
         var question = new Question();
         var val = $(':text[name="my-text"]').val();
-        console.log(val); // => "This is text."
-        FB.api('/me', {
-            fields: 'last_name'
-        }, function(userInfo) {
-            //question.set("")
-            console.log(userInfo);
-            question.set("text", val);
-            question.set("name", userInfo.last_name);
-            question.save(null, {
-                success: function(question) {
-                    // Execute any logic that should take place after the object is saved.
-                    alert(
-                        'New object created with objectId: ' +
-                        question.id);
-                },
-                error: function(question, error) {
-                    // Execute any logic that should take place if the save fails.
-                    // error is a Parse.Error with an error code and message.
-                    alert(
-                        'Failed to create new object, with error code: ' +
-                        error.message);
-                }
-            });
-        });
-        //questionにセット
+        console.log(val);
+        question.set("text", val);
+        // 今ログインしているユーザの取得
+        var user = Parse.User.current();
+
+        // ユーザ名が変数 name に入る
+        var name = user.getUsername();
+
+        question.set("name",name);
+
+        question.save(null, {
+            success: function(question) {
+                // Execute any logic that should take place after the object is saved.
+                alert(
+                    'New object created with objectId: ' +
+                    question.id);
+                $("#div-modal2").modal('hide');
+            },
+            error: function(question, error) {
+                // Execute any logic that should take place if the save fails.
+                // error is a Parse.Error with an error code and message.
+                alert(
+                    'Failed to create new object, with error code: ' +
+                    error.message);
+            }
+        }); // => "This is text."
+         
+           
     });
 });
 

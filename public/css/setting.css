@@ -76,6 +76,8 @@ abbr[title] {
 b,
 strong {
   font-weight: bold;
+  color:#dc143c;
+
 }
 
 /**
@@ -468,6 +470,7 @@ ul li {
   margin-bottom: 0;
   max-width: 69.9em;
   *zoom: 1;
+
 
 }
 .row .grid-1,
