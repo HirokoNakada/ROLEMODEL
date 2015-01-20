@@ -18,7 +18,7 @@ function parseLoginUsingFB() {
             FB.api('/me', function(userInfo) {
                 var user = Parse.User.current();
                 user.set("email", userInfo.email);
-                user.set("name", userInfo.name);
+                user.set("username", userInfo.name);
                 // area は Facebook から取ってくる（他には年齢とか名前とかメールとか）
                 　
                 user.save(null, {
@@ -26,6 +26,7 @@ function parseLoginUsingFB() {
                         alert(
                             "Successfully updated mail."
                         );
+                         window.location.replace("index2.html");
                     },
                     error: function(user, error) {
                         alert("Error: " +
@@ -34,7 +35,6 @@ function parseLoginUsingFB() {
                     }
                 });
             }); //birthdayとかも同じかんじでやる！
-            window.location.replace("index2.html");
         },
         error: function(user, error) {
             alert(
@@ -135,15 +135,11 @@ $(function() {
     });
 
     $("#logoutBtn").click(function () {
-    Parse.User.logOut();
-    {
-            success: function(user) {
-                window.location.href =
-                    'index.html';
-            },
+      Parse.User.logOut();
+      window.location.href = 'index.html';
+    });
 
     // ここから下にログアウト後の処理を書く。
-});
     $("#sendemail_btn").click(function() {
         var emailField = $("#sendemail");
         var email = emailField.val();
@@ -202,9 +198,7 @@ $(function() {
         question.save(null, {
             success: function(question) {
                 // Execute any logic that should take place after the object is saved.
-                alert(
-                    'New object created with objectId: ' +
-                    question.id);
+
                 $("#div-modal2").modal('hide');
             },
             error: function(question, error) {
