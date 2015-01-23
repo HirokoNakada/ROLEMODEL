@@ -620,12 +620,40 @@ html, body {
 iframe{
   opacity:0.8;
   vertical-align: bottom;
+  margin-left:-75px;
 }
 
 .copyright{
-  text-align: right;
+  text-align: right
 }
 
 .modal-footer {
   text-align: center;
+}
+
+.black{
+ margin-left:70px;
+}
+
+.contact-row a{
+  text-align: center;
+  font-size:30px;
+
+
+}
+
+
+.about h2{
+  font-size:20px;
+  text-align: center;
+
+
+
+}
+.about p{
+  text-align: left;
+  font-size:15px;
+}
+.about img{
+  padding-left:70px;
 }

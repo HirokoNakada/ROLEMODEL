@@ -32,17 +32,17 @@ Parse.FacebookUtils.logIn("email,user_location,user_birthday", {
 
            　  user.save(null, {
                 success: function(user) {
-                alert("Successfully updated mail.");
+              
                 },
                 error: function (user, error) {
-                   alert("Error: " + error.message);
+             
                 }
               });
             });//birthdayとかも同じかんじでやる！
             window.location.replace("index2.html");
         },
         error: function(user, error) {
-            alert("User cancelled the Facebook login or did not fully authorize.");
+     
             FB.logout();
         }
     });
