@@ -23,23 +23,17 @@ function parseLoginUsingFB() {
                 　
                 user.save(null, {
                     success: function(user) {
-                        alert(
-                            "Successfully updated mail."
-                        );
+                    
                          window.location.replace("index2.html");
                     },
                     error: function(user, error) {
-                        alert("Error: " +
-                            error.message
-                        );
+                        
                     }
                 });
             }); //birthdayとかも同じかんじでやる！
         },
         error: function(user, error) {
-            alert(
-                "User cancelled the Facebook login or did not fully authorize."
-            );
+         
             FB.logout();
         }
     });
@@ -112,8 +106,7 @@ $(function() {
                         "index2.html");
                 },
                 error: function(user, error) {
-                    alert("Error: " + error.code +
-                        " " + error.message);
+                 
                 }
             });
         });
@@ -158,8 +151,7 @@ $(function() {
                 // 保存する
                 subs.save();
                 // 成功した場合の処理
-                alert("購読しました。");
-                console.log(result);
+               
             },
             error: function(error) {
                 // エラーした場合の処理
@@ -176,7 +168,13 @@ $(function() {
         loginfacebook();
    
     });
+    $('#div-modal2').on('show.bs.modal', function (event) {      // div-modal2 の ダイアログをだしたときに
+        var clickedObject = $(event.relatedTarget);    // クリックされたタグ（<a> タグ）
+        var person = clickedObject.data("person");   // の data-person の値を取ってくる
 
+        console.log("Setting hidden value to " + person);
+    $("#person").val(person);       // <input type="hidden" id="person"> に値を追加する
+});
 
     $("#QuestionBtn").click(function() {
         console.log("question")
@@ -186,7 +184,9 @@ $(function() {
         var question = new Question();
         var val = $(':text[name="my-text"]').val();
         console.log(val);
+    
         question.set("text", val);
+
         // 今ログインしているユーザの取得
         var user = Parse.User.current();
 
@@ -194,6 +194,9 @@ $(function() {
         var name = user.getUsername();
 
         question.set("name",name);
+
+        var person = $("#person").val();
+        question.set("person", person);
 
         question.save(null, {
             success: function(question) {
@@ -204,9 +207,7 @@ $(function() {
             error: function(question, error) {
                 // Execute any logic that should take place if the save fails.
                 // error is a Parse.Error with an error code and message.
-                alert(
-                    'Failed to create new object, with error code: ' +
-                    error.message);
+            
             }
         }); // => "This is text."
          

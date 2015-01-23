@@ -107,6 +107,7 @@
                                     "message-text">質問を入力してください！</label>
 
                                     <form id="my-form" name="my-form">
+                                        <input type="hidden" id="person">
                                         <input class="form-control" id=
                                         "message-text" name="my-text" style=
                                         "width: 320px; height:100px;" type=
@@ -190,7 +191,8 @@
             <div class="row" style="text-align: center">
                 <div class="col-md-12" style="margin-bottom: 20px">
                 </div><a class="Qbutton pull-center" data-target="#div-modal2"
-                data-toggle="modal" id="submit_btn" onclick="$('select#person').val('加賀谷さん');"
+                data-toggle="modal" id="submit_btn"
+                data-person="加賀谷さん"
                 type="btn">質問する</a>
             </div>
         </div>
