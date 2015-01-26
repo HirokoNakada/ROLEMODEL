@@ -9,9 +9,288 @@
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/setting.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/interview.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="http://www.parsecdn.com/js/parse-1.3.1.min.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
 
 </head>
+
+<body>
+    <header class="mainHeader">
+        <div class="inner">
+            <div class="row">
+                <h1 class="logo"><a href="index.html"><img height="200px" src=
+                "img/logo4.png" width="50px"></a></h1>
+
+                <nav class="mainNav">
+                    　　　
+
+                    <div style="margin-left: 2em">
+                        <a href="#" class="hovbutton headbutton pull-center" data-target=
+                        "#div-modal1" data-toggle="modal" id="submit_btn"
+                        onclick="window.location.href='#div-modal1'" type=
+                        "btn">LOG IN</a> 
+                        <a href="#"class="hovbutton headbutton pull-center"
+                        data-target="#div-modal" data-toggle="modal" id=
+                        "submit_btn" onclick=
+                        "window.location.href='#div-modal'" type="btn">新規登録</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="content row box-copy">
+        <h2 style="text-align: center;"><b>もっと全国の中高生に<br>ロールモデルとなるひとを。</b></h2>
+        <h4 style="text-align: center;">ロールモデルとは、あこがれとなるような人のことです。<br>ROLE MODELでは中学生・高校生があこがれとなるような大人と出会うきっかけを提供し、<br>無料登録することで質問を投稿できます。
+
+        <br> <button class="btn"><a href="about.html"><b>もっと詳しく</b></a></button>
+        </h4></div>
+
+         <iframe width="1300" height="730" src="//www.youtube.com/embed/YLQ3MR8N6ak?autoplay=1&loop=1&playlist=YLQ3MR8N6ak&controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </header>
+
+    <div class="black">
+
+        <div class="modal fade" id="div-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
+
+                        <h4 href="#" class="modal-title">新規登録(中高生の方のみ)</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="panel-body">
+                                <form action="">
+                                    <!-- /.panel-body -->
+                                    <a href="javascript:void(0)" id=
+                                    "fbtouroku"><img alt="" 
+                                    hspace="20px" src="img/facebook1.png"
+                                    vspace="20px" >Facebookで登録する</a>
+
+                                    <div class="form-group">
+                                        ↓facebook登録でない方はこちら↓<br>
+                                        <br>
+                                        <label for="name">ニックネーム</label>
+                                        <span class="text-danger">※必須</span>
+                                        <input class="form-control" id="name"
+                                        placeholder="お名前を入力してください" type="text">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for=
+                                        "email">メールアドレス</label><span class=
+                                        "text-danger">※必須</span> <input class=
+                                        "form-control" id="email" placeholder=
+                                        "メールアドレスを入力してください" type="email">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for=
+                                        "password">パスワード</label><span class=
+                                        "text-danger">※必須</span> <input class=
+                                        "form-control" id="password"
+                                        placeholder="パスワードを入力してください" type=
+                                        "password"> <span class=
+                                        "help-block">パスワードは最低6文字以上を設定してください</span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="age">学年</label><span class=
+                                        "text-danger">※必須</span> <select class=
+                                        "form-control" id="age">
+                                            <option value="中学1年生">
+                                                中学1年生
+                                            </option>
+
+                                            <option value="中学2年生">
+                                                中学2年生
+                                            </option>
+
+                                            <option value="中学3年生">
+                                                中学3年生
+                                            </option>
+
+                                            <option value="高校1年生">
+                                                高校1年生
+                                            </option>
+
+                                            <option value="高校2年生">
+                                                高校2年生
+                                            </option>
+
+                                            <option value="高校3年生">
+                                                高校3年生
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for=
+                                        "gender">性別</label><span class=
+                                        "text-danger">※必須</span>
+
+                                        <div class="radio">
+                                            <label><input name="gender" type=
+                                            "radio" value="">男性</label>
+                                            <label><input name="gender" type=
+                                            "radio" value="">女性</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for=
+                                        "area">お住まいの地域</label><span class=
+                                        "text-danger">※必須</span> <select class=
+                                        "form-control" id="area">
+                                            <option value="北海道・東北">
+                                                北海道・東北
+                                            </option>
+
+                                            <option value="北陸">
+                                                北陸
+                                            </option>
+
+                                            <option value="甲信越">
+                                                甲信越
+                                            </option>
+
+                                            <option value="関東">
+                                                関東
+                                            </option>
+
+                                            <option value="中部">
+                                                中部
+                                            </option>
+
+                                            <option value="関西">
+                                                関西
+                                            </option>
+
+                                            <option value="中国">
+                                                中国
+                                            </option>
+
+                                            <option value="四国">
+                                                四国
+                                            </option>
+
+                                            <option value="九州・沖縄">
+                                                九州・沖縄
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label><input id="checkbox" name=
+                                            "one" type="checkbox" value=
+                                            "1"><a href=
+                                            "policy.html">プライバシーポリシーに同意する</a></label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- /.container -->
+                    </div>
+
+                    <div class="modal-footer">
+                        <button href class="btn" id="tourokuBtn" type="button">
+                            <b>無料登録する</b></button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+
+        <div class="modal fade" id="div-modal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type=
+                        "button">&times;</button>
+
+                        <h4 href="#" class="modal-title">ログイン</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="panel-body">
+                                <form action="">
+                                    <a href="javascript:void(0)" id=
+                                    "fblogin"><img alt="" hspace="20px" src="img/facebook1.png"
+                                    vspace="20px" >Facebookでログインする</a>
+
+                                    <div class="form-group">
+                                        <label for="email">メールアドレス</label>
+                                        <input class="form-control" id=
+                                        "loginemail" placeholder=
+                                        "メールアドレスを入力してください" type="email">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">パスワード</label>
+                                        <input class="form-control" id=
+                                        "loginpassword" placeholder=
+                                        "パスワードを入力してください" type="password">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" id="loginBtn" type=
+                            "button">ログイン</button>
+                        </div>
+                    </div>
+                </div><!-- /.container -->
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+
+
+<h1>伝統産業品をつなぐ、ということの一番たのしいところは？</h1>
+これから大人になっていく赤ちゃんこどもへ送るものを作るお仕事ってすごいやりがいのある仕事だなーって思うんだよね。で、可能性がたくさんあるでしょ？どんなものにふれるか、で感性がみがかれていったりとか、感性を磨くお手伝いしか私たちはできないんだよね。磨くことは本人にしかできない。だからどうやったらそのお手伝いができるかなーって考えながら商品をつくっていくのはすごくわくわくするし、それを手に取った赤ちゃん、子供たちに出会ったり、そのお写真みたりするとすごくやっぱりよかったなーって思うんだよね。しかもそれをずっと大人になっても使い続けてもらえるような普遍的なデザインでつくってるのでその人の一生にかかわるお仕事なのかなーって。そのひとの子供とかにもうけつがれていってくれたら嬉しいなーって思うし、少なくともその人の人生のなかで長くおつきあいしてもらえるようなものをつくるこの仕事っていうのはすごくやりがいがあるしわくわくするよね。
+
+<h1>—————逆に、苦しい、大変だと思うことは？</h1>
+うーーん。あんまりないかな。たぶん、たのしいことがおきるのって、やっぱりそういう苦しいこともあるんだろうけど、結果、すべてそれが楽しい事に変換されてゆく、、から、だからそんなにこう、、記憶に残らないんだよね。失敗ていうのは、成功するためにおきるもので、失敗したそのつぎには必ず成功がまってるのかなーって。
+
+<h1>———————これは、中高生のために発信していこうと思っているんですが、矢島さんが変わったきっかけは？</h1>
+どうなんだろう。。昔っからやってたから（笑）親がやりたいことはなんでもやらせてくれたから、興味もったことはやってた。遠慮とかは全然しない。
+自分に素直に生き続けてきたんだと思う。好きだから好きだし、嫌いだから嫌いだし、、
+——それは自信からでてくるものなんですか？
+んー。あんまり難しく考えない。シンプルに生きる。自分に素直になるとシンプルにいきられるようになるんだと思う。
+—————新しいことを始める時の恐怖感は？
+たぶん、わくわくの方が勝る。逆に言うと、わくわくが勝ったものしかやってないんだと思う。こわいからやめようくらいだったらやめたらいいんじゃない？たぶんそこまでやりたいものじゃないんだと思うよ。本当にやりたかったらこわくてもやるもん。やりたいから怖く無くなるよね。やったとしてもたぶんうまくいかないし。それを超えるようなわくわく感
+うごかないではいられない！
+
+
+<h1>————勉強と部活とか、、ビジネスと似てるところは？</h1>
+好きで一生懸命やり続けること？
+
+楽しいから自然と入ってくる。楽しいかどうかが大事。
+極端に得意なものがあれば、極端に不得意なことがあっても平均にならすことができるし、もしかしたら平均値よりちょっと上かもしれないよね。だからもう自分は、まんべんなく生きるタイプではないっていうのを小学校とかからわかるでしょ？だから自分の生き方っていうのがわかるよね？
+だからそういうタイプってわかれば、得意なところを苦手なところをカバーできるくらい得意にすれば平均くらいとれるんじゃないかなーでもある一点に関してはだれにも負けないぞーっていう。そのほうが楽しくない？
+
+
+この　あえる　は、すごくいろんなことができる場所だなって思ってて、教育も、伝えるも、知る機会、早ければ早いほどいいと思ってるから、後継者育成事業もやっていかなきゃいけないなーっておもうし職人さんの道具をどうやって受け継ぐか、原材料とかも、山一個買い取ってやろうかなって思ってたり笑、原材料が手に入らなくて困っているとか、、いろんな問題があって、それを総合的に解決していくことができるなーとおもってる。
+
+<h1>————それはやじまさんが一生をかけてやりたいの？</h1>
+一生かけるんじゃなくてかかっちゃいそうだよねー
+一つのところから入って、あ、ここにもここにもここにも問題点がある！ってみつけて、でもその問題点って解決できるってことなんだよね。
+つまり、いいとこに持っていく。
+
+
+<h1>ーーーーやじまさんがいろんなことに挑戦できたのはまわりにたくさん情報があったから？</h1>
+んー、自分でとりにいった。取材を三年間やって、現場をみてきた。自分でとりにいくと、こんな情報あったよりかちゃん、ってもってきてくれるひとがあらわれたり、なぜなら私はいろんな人にあうたんびにあえるの種みたいなお話をしてる。なにやってるの？ってきかれたらこんなのやりたいっていった。そうしたら学生時代落語によんでもらったり、歌舞伎のチケットあるけどいかない？っていったり、
+りかちゃんこれ喜んでくれるなって安心してもってきてくれる。動き続けるとそうやって人が厚真てkる
+職人さんも一緒。さいsよ自分でうごて、それからきてくれるようになった。
+同じ現象なんだよね
+最初っからだれかがもってきてくれるってことはないし、もってきてくれたものが自分がやりたいことかとうかわからないし、自分でみつけてみいだしてやっていく。別に私は企業したかっらわけじゃなくて、伝えるお仕事がしたかあったから、そしたらつくる場もなくて、ものもなくて、人もいなかった。じゃあまずそっからやんなきゃーってことなんだよね。場所があって、物があれば私は伝えるお仕事ができてる。
+これから、中高生がこんなことやりたいなってなったときにもしそれに会えるが当てはまるんであったら、ぜろからやるよりもここのおしごとは自分のやりたいものに近いなーとか、あえるでやっていくなかで自分のやっていきたいことを見つけるとか。その場がもうできてあるから、場作りから始めるんじゃなくて、その次の段階からできることをやってほしい。
+あえるくんの育てるいろんな優秀な子たちに、また入ってきてもらえるような場作りをするのが次のお仕事になってきている。あえるくんA,B,Cあってゼロから始めても最終的にどんぐりのせいくらべでしょ？今の社会もそんな感じ。同じような商品作らずに協力してやればもっと成長できると思う。真似した真似してない、訴訟したしてない、すごい人生もったいないなと思う。だから私はなにかやりたいと思う子に、最初から作るんじゃなくて一緒にやりたい。自分ひとりの人生じゃここまでしか行かなかったものが、あえるに入って同じような夢を持ってる子たちが自分のできる分野をやっていったらここまでできちゃったーって。それが会社の面白さなのかなーって。ステップ作りというより土台作りをしてあげる。
