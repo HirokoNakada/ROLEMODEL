@@ -213,7 +213,18 @@ $(function() {
          
            
     });
+  var currentUser = Parse.User.current();
+
+if (currentUser) {
+    var welcome = $("#welcome");    // welcome と付いているタグを抽出
+
+    if (welcome.length) {    // welcome のタグがある場合だけ
+        welcome.text(currentUser.getUsername());    Parse にあるユーザ名を表示する
+    }
+}
 });
+
+
 
   $("#div-modal2").on("shown.bs.modal", function ( e ) {
         // ダイアログが表示された時の動作をここに書きます。
