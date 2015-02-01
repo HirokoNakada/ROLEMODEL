@@ -9,10 +9,12 @@
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/setting.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/iHover.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="http://www.parsecdn.com/js/parse-1.3.1.min.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
+    <script src="js/index1.js"></script>
 
 </head>
 
@@ -42,7 +44,10 @@
 
         <div class="row">
         <div class="content row box-copy">
-        <h2 style="text-align: center;"><b>もっと全国の中高生に<br>ロールモデルとなるひとを。</b></h2>
+            <div class="catch-copy">
+           <h2 style="text-align: center;">全国の中高生にロールモデルとなるひとを。</h2>      
+                </div>
+        
         <h4 style="text-align: center;">ロールモデルとは、あこがれとなるような人のことです。<br>ROLE MODELでは中学生・高校生があこがれとなるような大人と出会うきっかけを提供し、<br>無料登録することで質問を投稿できます。
 
         <br> <button class="btn"><a href="about.html"><b>もっと詳しく</b></a></button>
@@ -60,7 +65,7 @@
                     <div class="modal-header">
                         <button class="close" data-dismiss="modal" type="button">&times;</button>
 
-                        <h4 href="#" class="modal-title">新規登録(中高生の方のみ)</h4>
+                        
                     </div>
 
                     <div class="modal-body">
@@ -214,7 +219,6 @@
                         <button class="close" data-dismiss="modal" type=
                         "button">&times;</button>
 
-                        <h4 href="#" class="modal-title">ログイン</h4>
                     </div>
 
                     <div class="modal-body">
@@ -246,6 +250,20 @@
                             <button class="btn btn-primary" id="loginBtn" type=
                             "button">ログイン</button>
                         </div>
+
+
+                        <div class="sawa-modal" id="sawa-modal">
+                        <div class="container">
+
+
+                            <div class="panel-body">
+                             
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </div><!-- /.container -->
             </div>
@@ -266,62 +284,22 @@
                         <p>中高生時代にやるべきことを経験談を交えてお話しいただきました
                             ！
                       </p><a class="info" href=
-                        "#yajima.html">Read More</a>
+                        "yajima.html">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="black">
-        <div class="content row">
-            <div class="recommend pickup" style="taxt-align: center">
-                <div class="view view-second">
-                    <img src="img/kagaya.png">
-
-                    <div class="mask"></div>
-
-                    <div class="content">
-                        <h2>加賀谷 友典氏</h2>
-
-                        <p>これからのデジタルはどうなっていくのか、未来のお話をたくさんしていただきました！
-                      </p><a class="info" href=
-                        "#kagaya.html">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <div class="content row">
         <!-- メニュー
       ================================================== -->
 
-        <h1>インタビュー予定</h1>
+        <h1>INTERVIEW</h1>
 
-        <div class="list grid-4">
-
-            <div class="view2 view-third">
-                <img alt="" height="300" src="img/christ.jpg" width="300">
-
-                <div class="mask2"></div>
-
-                <div class="content"></div>
-            </div>
-
-            <h2><a href="profile.html" target="_blank">澤円氏</a></h2>
-
-            <p>Microsoftのキリスト様</p>
-
-            <div class="row" style="text-align: center">
-                <div class="col-md-12" style="margin-bottom: 20px"></div>
-                <a href="#" class="Qbutton pull-center" data-target="#div-modal"data-toggle="modal" 
-                id="submit_btn"  type="btn">質問する</a>
-            </div>
- 
-        </div>
-
+     
         <div class="list grid-4">
             <div class="view2 view-third">
                 <img alt="" height="100" src="img/nakamura.jpg" width="100">
@@ -342,6 +320,30 @@
                 "window.location.href='#div-modal'" type="btn">質問する</a>
             </div>
         </div>
+
+
+                <div class="list grid-4">
+            <div class="view2 view-third">
+                <img alt="" height="100" src="img/christ.jpg" width="100">
+
+                <div class="mask2"></div>
+
+                <div class="content"></div>
+            </div>
+
+            <h2><a href="profile.html" target="_blank">澤 円氏</a></h2>
+
+            <p>Microsoftのキリスト様</p>
+
+            <div class="row" style="text-align: center">
+                <div class="col-md-12" style="margin-bottom: 20px">
+                </div><a href="#" class="Qbutton pull-center" data-target="#div-modal"
+                data-toggle="modal" id="submit_btn" onclick=
+                "window.location.href='#div-modal'" type="btn">質問する</a>
+            </div>
+        </div>
+
+
 
         <div class="list grid-4">
             <div class="view2 view-third">
@@ -392,13 +394,17 @@
                         </div>
 
                         <div class="col-md-12" style="margin-bottom: 20px">
-                            <a class="hovbutton" href="#" id=
+                            <a class="hovbutton emailbtn" href="#" id=
                             "sendemail_btn">登録する</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+</div>
+
+
 
 </div>
 

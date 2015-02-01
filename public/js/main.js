@@ -48,7 +48,7 @@ function loginfacebook() {
         } else { // それ以外
             // Facebook にログイン
             FB.login(function(loginResponse) {
-                if (response.authResponse) {
+      　　　　　　　if (loginResponse.authResponse) {
                     parseLoginUsingFB();
                 } else {
                     console.log(
@@ -219,7 +219,7 @@ if (currentUser) {
     var welcome = $("#welcome");    // welcome と付いているタグを抽出
 
     if (welcome.length) {    // welcome のタグがある場合だけ
-        welcome.text(currentUser.getUsername());    Parse にあるユーザ名を表示する
+        welcome.text(currentUser.getUsername());   // Parse にあるユーザ名を表示する
     }
 }
 });
@@ -230,3 +230,16 @@ if (currentUser) {
         // ダイアログが表示された時の動作をここに書きます。
     });
 
+
+$(function(){
+    $('.btns').click(function(){
+        wn = '.' + $(this).data('tgt');
+        var mW = $(wn).find('.modalBody').innerWidth() / 2;
+        var mH = $(wn).find('.modalBody').innerHeight() / 2;
+        $(wn).find('.modalBody').css({'margin-left':-mW,'margin-top':-mH});
+        $(wn).fadeIn(500);
+    });
+    $('.close,.modalBK').click(function(){
+        $(wn).fadeOut(500);
+    });
+});

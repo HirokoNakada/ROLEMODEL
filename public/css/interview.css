@@ -1,9 +1,39 @@
-h1{
-  border-left: 18px solid #ff0000;
-  font-size:20px;
+.interview h1{
+  border-bottom: 5px;
+  font-size:30px;
+  font-family:"ヒラギノ明朝 ProN";
+  background-color: #dc143c;
+color: #fff;
+font-size: 40px;
+font-weight: 600;
+padding: 20px;
+
+
 }
 
 h2{
   color: #333;
 font-weight: bold;
+
+}
+
+.interview{
+  padding-left:200px;
+  padding-right:200px;
+
+
+}
+
+body{
+   background-color:#f5f5f5;
+}
+.interview p{
+  line-height: 50px
+
+}
+
+.interview img{
+  display: inline-block;
+  padding-bottom:30px;
+  padding-top:20px;
 }

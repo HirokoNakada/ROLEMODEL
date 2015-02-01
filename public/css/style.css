@@ -15,7 +15,7 @@ h1 {
   text-align: center;
   color:#000;
   font-family:"GillSans";
-  border-bottom:solid 5px
+
 
 }
 
@@ -26,7 +26,7 @@ h3{
 }
 
 h4{
-  font-size:25px;
+  font-size:20px;
   color:#fff;
   padding-bottom:30px;
   line-height:40px
@@ -81,8 +81,8 @@ a:hover {
   background-color:#fff;
   color:#000;
   font-family:'Gill Sans';
-  margin-bottom:20px;
-  font-size:25px;
+
+  font-size:20px;
   display:inline-block;
 }
 
@@ -416,102 +416,15 @@ html, body {
     cursor: default;
     background: #fff url(img/bgimg.jpg) no-repeat center center
 }
-.view2 .mask2 , .view2 .content {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
-.view2 img {
-    display: block;
-    position: relative
-}
-.view2 h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 8px;
-    padding: 0px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0;
-}
-.view2 p {
-    font-size: 6px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center;
-    opacity: 0;
-
-}
-.view2 a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
-    opacity: 0;
-}
-.view2 a.info:hover {
-    box-shadow: 0 0 5px #000;
-}
 
 
 
-.view2:hover p,
-.view2:hover a {
-  opacity: 1;
+.logoutbtn{
+  margin-left: auto;
+
 }
 
-.view-third img {  
-    transition: all 0.2s ease-in;
-}
-.view-third .mask2 { 
-    background-color: rgba(169,169,169, 0.5); 
-    width: 800px;
-    padding: 600px;
-    height: 1200px;
-    opacity: 0;
-    transform: translate(265px, 145px) rotate(45deg);
-    transition: all 0.2s ease-in-out;
-}
-.view-third h2 {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    background: transparent;
-    margin: 20px 40px 0px 40px;
-    transform: translate(200px, -200px);
-    transition: all 0.2s ease-in-out;
-}
-.view-third p { 
-    transform: translate(-200px, 200px);
-    transition: all 0.2s ease-in-out;
-}
-.view-third a.info { 
-    transform: translate(0px, 100px);
-    transition: all 0.2s 0.1s ease-in-out;
-} 
 
-.view-third:hover .mask2 { 
-    opacity:1; 
-    transform: translate(40px, -250px) rotate(75deg);
-}                             
-.view-third:hover h2 { 
-    transform: translate(0px,0px);
-    transition-delay: 0.3s; 
-}
-.view-third:hover p { 
-    transform: translate(0px,0px); 
-    transition-delay: 0.4s;
-}
-.view-third:hover a.info { 
-    transform: translate(0px,0px); 
-    transition-delay: 0.5s;
-}
 
 
 .hovbutton {
@@ -548,6 +461,7 @@ html, body {
   border: 2px solid #333;
   color: #333;
   line-height: 48px;
+ margin-top:-7px;
 }
 
 .headbutton {
@@ -637,7 +551,7 @@ iframe{
 
 .contact-row a{
   text-align: center;
-  font-size:30px;
+  font-size:25px;
 
 
 }
@@ -674,6 +588,28 @@ height: 10em;
 
 }
 
-.logoutbtn{
-  margin-left: auto;
+
+
+.catch-copy h2{
+background-color: #dc143c;
+color: #fff;
+font-size: 45px;
+font-weight: 600;
+padding: 30px;
+margin-top: 240px;
+}
+
+
+
+.modal-body{
+  border-bottom-width: 0px;
+}
+
+.emailbtn {
+  margin-top:10px;
+
+}
+
+.content h1{
+  border-bottom: 5px
 }
