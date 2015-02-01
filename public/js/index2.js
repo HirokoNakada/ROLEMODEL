@@ -49,5 +49,13 @@ Parse.FacebookUtils.logIn("email,user_location,user_birthday", {
     }
  Parse.initialize("EypdoI1hRR9e2CCHlllrB6ZvYYGxjfRmXCQGQQ4q", "w2RfaOy33TNnRWjsjcbyzvmRkmb3k7sPoTSyOwAS");
 $(function(){
-  
-})
+  var currentUser = Parse.User.current();    // Parse ユーザを取得
+
+    if (currentUser) {    // ログインしている場合
+        console.log("Already logged in.");
+    } else {
+        location.replace("index.html");    // index2.html へ移動
+        console.log("Not logged in yet. Redirecting to index.html");
+    
+  }
+});

@@ -417,6 +417,10 @@ html, body {
     background: #fff url(img/bgimg.jpg) no-repeat center center
 }
 
+.home .view2{
+  float: none;
+}
+
 
 
 .logoutbtn{
