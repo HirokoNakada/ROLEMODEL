@@ -113,7 +113,7 @@ p{
   overflow: hidden;
   position: relative;
   background-color:#000;
-  padding-top:80px;
+
 }
 .mainHeader .inner {
   position: fixed;
@@ -123,11 +123,11 @@ p{
   height: 80px;
   text-align: center;
   z-index: 5;
-  background-color: #fff;
+
 }
 /**
   サイト名のCSS設定
-**/
+**
 .mainHeader h1 {
   float: left;
   font-size: 20px;
@@ -595,7 +595,7 @@ height: 10em;
 
 
 .catch-copy h2{
-background-color: #dc143c;
+
 color: #fff;
 font-size: 45px;
 font-weight: 600;
@@ -616,4 +616,9 @@ margin-top: 240px;
 
 .content h1{
   border-bottom: 5px
+}
+
+.okinawaimg{
+  display: block;
+  margin-left:100px;
 }
