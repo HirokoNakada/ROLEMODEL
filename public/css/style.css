@@ -125,6 +125,14 @@ p{
   z-index: 5;
 
 }
+.logo{
+  width:100%;
+  transition: all .2s ease-out;
+}
+.logo-scroll {
+  width:240px;
+}
+
 /**
   サイト名のCSS設定
 **
