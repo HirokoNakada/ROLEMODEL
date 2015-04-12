@@ -274,10 +274,11 @@ footer a{
 
 
 h2{
-  font-family:"GillSans";
+  font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;;
   font-size:30px;
   color:#000;
   padding-top:20px;
+  text-align: center;
 
 }
 
@@ -690,4 +691,15 @@ margin-top: 240px;
   display: block;
  margin-left:200px;
 
+}
+
+.interview{
+  background:#fff;
+}
+.map h1{
+  font-size:30px;
+}
+
+.map{
+  background: #fff;
 }
