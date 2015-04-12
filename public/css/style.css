@@ -5,16 +5,16 @@ body {
   font-family:'GillSans';
   font-size: 16px;
   color:#000000;
-  background-color:#fff;
+  background-color:#efefef;
 
 }
 
 h1 {
-  font-size:50px;
+  font-size:40px;
   margin: 0.67em 0;
   text-align: center;
-  color:#000;
-  font-family:"GillSans";
+  color:#8ec31e;
+  font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 
 
 }
@@ -116,7 +116,7 @@ p{
 
 }
 .mainHeader .inner {
-  position: fixed;
+  position:absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -232,6 +232,7 @@ p{
   margin: 0;
   padding: 0;
   color:#000;
+  font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 
 }
 
@@ -274,8 +275,9 @@ footer a{
 
 h2{
   font-family:"GillSans";
-  font-size:50px;
+  font-size:30px;
   color:#000;
+  padding-top:20px;
 
 }
 
@@ -453,16 +455,9 @@ html, body {
   text-decoration: none;
   line-height: 54px;
   outline: none;
-  box-shadow: 0px 3px 10px #808080;
 
 }
-.hovbutton::before,
-.hovbutton::after {
-  position: absolute;
-  z-index: -1;
-  display: block;
-  content: '';
-}
+
 .hovbutton,
 .hovbutton::before,
 .hovbutton::after {
@@ -472,15 +467,18 @@ html, body {
   -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 .hovbutton {
-  position: relative;
-  z-index: 2;
-  background-color: #fff;
-  border: 2px solid #333;
-  color: #333;
-  line-height: 48px;
- margin-top:-7px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  line-height: 50px;
 }
+.hovbutton:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+
 
 .headbutton {
   float:right;
@@ -567,11 +565,15 @@ iframe{
  margin-left:70px;
 }
 
+.contact-row{
+  background-color:#fff;
+  padding-top:5px;
+
+}
 .contact-row a{
+
   text-align: center;
   font-size:25px;
-
-
 }
 
 
@@ -611,7 +613,7 @@ height: 10em;
 .catch-copy h2{
 
 color: #fff;
-font-size: 45px;
+font-size: 30px;
 font-weight: 600;
 padding: 30px;
 margin-top: 240px;
@@ -628,6 +630,39 @@ margin-top: 240px;
 
 }
 
+.emailbtn {
+  position: relative;
+  z-index: 2;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  line-height: 50px;
+}
+.emailbtn:hover {
+  background-color: #fff;
+  border-color: #8ec31e;
+  color: #8ec31e;
+}
+.emailbtn::before,
+.emailbtn::after {
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #333;
+}
+.emailbtn::before {
+  top: 0;
+}
+.emailbtn::after {
+  bottom: 0;
+}
+.emailbtn:hover::before,
+.emailbtn:hover::after {
+  height: 0;
+  background-color: #59b1eb;
+}
+
+
 .content h1{
   border-bottom: 5px
 }
@@ -643,4 +678,16 @@ margin-top: 240px;
 
 #map img {
   max-width: none;
+}
+
+.mb50 img{
+  height:439px;
+  width:316px;
+  margin:20px;
+}
+
+.what img{
+  display: block;
+ margin-left:200px;
+
 }
