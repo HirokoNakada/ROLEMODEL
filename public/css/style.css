@@ -4,7 +4,7 @@
 body {
   font-family:'GillSans';
   font-size: 16px;
-  color:#000000;
+  color:#efefef;
 
 
 }
@@ -276,8 +276,8 @@ footer a{
 
 h2{
   font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;;
-  font-size:30px;
-  color:#000;
+  font-size:20px;
+  color:#FF073C;
   padding-top:20px;
   text-align: center;
 
@@ -499,51 +499,13 @@ html, body {
 }
 
 
-.Qbutton {
-  display: inline-block;
-  width: 200px;
-  height: 54px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 54px;
-  outline: none;
-  border: 3.5px solid #000;
-  box-shadow: 0px 3px 10px #808080;
-}
-.Qbutton::before,
-.Qbutton::after {
-  position: absolute;
-  z-index: -1;
-  display: block;
-  content: '';
-}
-.Qbutton,
-.Qbutton::before,
-.Qbutton::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-
-}
-
-.Qbutton {
-  background-color: #fff;
-
-  color: #333;
-  line-height: 50px;
-}
-.Qbutton:hover {
-  border-style: dashed;
-}
 
 .hide{
   display:none;
 }
 
 .mainfooter{
-  border-top:1px #000 solid;
+  border-top:1px #FF073C solid;
   padding:20px;
 
 
@@ -665,6 +627,43 @@ margin-top: 240px;
 }
 
 
+.Qbutton{
+  position: relative;
+  z-index: 2;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  line-height: 50px;
+  margin-top:10px;
+  height:50px;
+  width:100px;
+
+}
+.Qbutton:hover {
+  background-color: #fff;
+  border-color: #8ec31e;
+  color: #8ec31e;
+}
+.Qbutton::before,
+.Qbutton::after {
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #333;
+}
+.Qbutton::before {
+  top: 0;
+}
+.Qbutton::after {
+  bottom: 0;
+}
+.Qbutton:hover::before,
+.Qbutton:hover::after {
+  height: 0;
+  background-color: #59b1eb;
+}
+
+
 .content h1{
   border-bottom: 5px
 }
@@ -696,11 +695,24 @@ margin-top: 240px;
 
 .interview{
   background:#fff;
+  padding-top:70px;
 }
 .map h1{
   font-size:30px;
+  padding-top:40px;
 }
 
 .map{
   background: #fff;
+}
+#topic{
+  padding-bottom:50px;
+}
+#merit {
+  background: #eee;
+  padding: 40px 0;
+}
+#merit img{
+    border-bottom: 5px solid #FF073C;
+
 }

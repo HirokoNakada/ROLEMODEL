@@ -26,7 +26,8 @@ window.onload = function() {
         div: "#map",
         lat: lat,
         lng: lng,
-        zoom: 10
+        zoom: 10,
+        scrollwheel: false
     });
 
 
