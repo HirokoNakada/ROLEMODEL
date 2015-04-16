@@ -240,6 +240,7 @@ $(function(){
         $(wn).fadeIn(500);
     });
     $('.close,.modalBK').click(function(){
+        wn = '.' + $(this).data('tgt');
         $(wn).fadeOut(500);
     });
 });

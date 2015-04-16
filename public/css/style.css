@@ -4,7 +4,7 @@
 body {
   font-family:'GillSans';
   font-size: 16px;
-  color:#efefef;
+  color:#333;
 
 
 }
@@ -23,6 +23,8 @@ h1 {
 
 h3{
   font-size:18px;
+  text-align:center;
+  font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;;
 }
 
 h4{
@@ -422,9 +424,9 @@ html, body {
 
 /**----------------------------------------------------------------------------**/
 .view2 {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+    width: 500px;
+    height: 400px;
+    margin: 0px 380px;
     float: left;
     border: 10px solid #fff;
     overflow: hidden;
@@ -630,6 +632,7 @@ margin-top: 240px;
 .Qbutton{
   position: relative;
   z-index: 2;
+  padding:10px;
   background-color: #333;
   border: 2px solid #333;
   color: #fff;

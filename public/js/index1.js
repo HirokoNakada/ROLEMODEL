@@ -22,12 +22,17 @@ window.onload = function() {
     var lng = 127.711596;
     var lat2 = 26.240355;
     var lng2 = 127.711580;
-    var map = new GMaps({
-        div: "#map",
-        lat: lat,
-        lng: lng,
-        zoom: 10,
-        scrollwheel: false
+ var map = new GMaps({
+    div: "#map",
+    lat: lat,
+    lng: lng,
+    zoom: 10,
+    scrollwheel: false,
+    scaleControl: false,
+    zoomControl: false,
+    panControl: false,
+    streetViewControl: false,
+    overviewMapControl: false
     });
 
 
@@ -35,21 +40,12 @@ window.onload = function() {
         lat: lat,
         lng: lng,
         title: "ROLE MODEL",
-        icon: "/img/logoo8.png",
+        icon: "/img/logoo11.png",
         infoWindow: {
             content: "<h2>タイトル</h2><p><br/>説明文が入ります。</p>"
         }
     });
 
-    map.addMarker({
-        lat: lat2,
-        lng: lng2,
-        title: "ROLE MODEL",
-        icon: "/img/logoo8.png",
-        infoWindow: {
-            content: "<h2>タイトル</h2><p><br/>説明文が入ります。</p>"
-        }
-    });
 
 
     var styles = [{
