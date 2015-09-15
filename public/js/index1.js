@@ -1,6 +1,5 @@
 $(function() {
     var currentUser = Parse.User.current(); // Parse ユーザを取得
-
     if (currentUser) { // ログインしている場合
         console.log("Already logged in. Redirecting to index2.");
         location.replace("index2.html"); // index2.html へ移動
@@ -16,26 +15,23 @@ $(function() {
         }
     });
 });
-
 window.onload = function() {
     var lat = 26.240362;
     var lng = 127.711596;
     var lat2 = 26.240355;
     var lng2 = 127.711580;
- var map = new GMaps({
-    div: "#map",
-    lat: lat,
-    lng: lng,
-    zoom: 10,
-    scrollwheel: false,
-    scaleControl: false,
-    zoomControl: false,
-    panControl: false,
-    streetViewControl: false,
-    overviewMapControl: false
+    var map = new GMaps({
+        div: "#map",
+        lat: lat,
+        lng: lng,
+        zoom: 10,
+        scrollwheel: false,
+        scaleControl: false,
+        zoomControl: false,
+        panControl: false,
+        streetViewControl: false,
+        overviewMapControl: false
     });
-
-
     map.addMarker({
         lat: lat,
         lng: lng,
@@ -45,9 +41,6 @@ window.onload = function() {
             content: "<h2>タイトル</h2><p><br/>説明文が入ります。</p>"
         }
     });
-
-
-
     var styles = [{
         "featureType": "administrative",
         "elementType": "labels.text.fill",
@@ -143,13 +136,10 @@ window.onload = function() {
             "visibility": "on"
         }]
     }];
-
     map.addStyle({
         styledMapName: "Styled Map",
         styles: styles,
         mapTypeId: "map_style"
     })
-
     map.setStyle("map_style");
-
 };

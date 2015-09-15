@@ -2,137 +2,123 @@
   全体のCSSのCSS設定
 **/
 body {
-  font-family:'GillSans';
-  font-size: 16px;
-  color:#333;
-
-
+    font-family:'GillSans';
+    font-size:16px;
+    color:#333
 }
 
 h1 {
-  font-size:40px;
-  margin: 0.67em 0;
-  text-align: center;
-  color:#8ec31e;
-  font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-
-
+    font-size:40px;
+    margin:.67em 0;
+    text-align:center;
+    color:#8ec31e;
+    font-family:"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif
 }
 
-
-
-h3{
-  font-size:18px;
-  text-align:center;
-  font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;;
+h3 {
+    font-size:18px;
+    text-align:center;
+    font-family:"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif
 }
 
-h4{
-  font-size:20px;
-  color:#fff;
-  padding-bottom:30px;
-  line-height:40px
+h4 {
+    font-size:20px;
+    color:#fff;
+    padding-bottom:30px;
+    line-height:40px
 }
 
-
-li{
-  font-family:"GillSans";
-  font-size:20px;
-  float:left;
-
+li {
+    font-family:"GillSans";
+    font-size:20px;
+    float:left
 }
 
-#nav ul li{   
-    display: inline;
-    margin-right:8px;
- } 
+#nav ul li {
+    display:inline;
+    margin-right:8px
+}
 
-button{
-   display: inline-block;
-
+button {
+    display:inline-block
 }
 
 /**
   リンクのCSS設定
 **/
 a {
-  text-decoration: none;
-  font-family:'GillSans';
-  font-size:20px;
-  color:#000;
-
+    text-decoration:none;
+    font-family:'GillSans';
+    font-size:20px;
+    color:#000
 }
 
-dd{
-  font-family:'GillSans';
+dd {
+    font-family:'GillSans'
 }
-
 
 /**
   リンクをマウスオーバーしたときのCSS設定
 **/
 a:hover {
-  color:#696969;
+    color:#696969
 }
 
 .container {
-  height: 100%;
+    height:100%
 }
 
 .btn {
-  background-color:#fff;
-  color:#000;
-  font-family:'Gill Sans';
-
-  font-size:20px;
-  display:inline-block;
+    background-color:#fff;
+    color:#000;
+    font-family:'Gill Sans';
+    font-size:20px;
+    display:inline-block
 }
 
-.btn1{
-  background-color:#fff;
-  color:#000000;
-  font-family:'Gill Sans';
-  font-size:25px;
+.btn1 {
+    background-color:#fff;
+    color:#000;
+    font-family:'Gill Sans';
+    font-size:25px
 }
 
-.form-control{
-  width:360px;
-  display: inline-block;
-
+.form-control {
+    width:360px;
+    display:inline-block
 }
 
-p{
-  text-align:center;
+p {
+    text-align:center
 }
-
 
 /**
   固定ヘッダーのCSS設定
 **/
 .mainHeader {
-  /* ヘッダーの背景画像 */
- 
-  overflow: hidden;
-  position: relative;
-  background-color:#000;
-
+/* ヘッダーの背景画像 */
+    overflow:hidden;
+    position:relative;
+    background-color:#000
 }
+
 .mainHeader .inner {
-  position:absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 80px;
-  text-align: center;
-  z-index: 5;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    height:80px;
+    text-align:center;
+    z-index:5
+}
 
+.logo {
+    width:100%;
+    transition:all .2s ease-out
 }
-.logo{
-  width:100%;
-  transition: all .2s ease-out;
-}
+
 .logo-scroll {
-  width:240px;
+    width:240px
 }
 
 /**
@@ -154,568 +140,598 @@ p{
   メニューのCSS設定
 **/
 .mainHeader .mainNav ul {
-  float: right;
-  line-height: 80px;
+    float:right;
+    line-height:80px
 }
+
 .mainHeader .mainNav ul li {
-  float: left;
+    float:left
 }
+
 .mainHeader .mainNav ul li a {
-  display: block;
-  padding: 0 20px;
+    display:block;
+    padding:0 20px
 }
-.mainNav{
-  position: absolute;
-  top:0;
-  right:0;
 
-
+.mainNav {
+    position:absolute;
+    top:0;
+    right:0
 }
+
 /**
   ヘッダーのテキスト文のCSS設定
 **/
 .mainHeader .text {
-  margin: auto;
-  color: #fff;
-  border: 1px solid #fff;
-  min-width: 300px;
-  max-width: 500px;
-  padding: 30px 20px;
-  z-index: 1;
+    margin:auto;
+    color:#fff;
+    border:1px solid #fff;
+    min-width:300px;
+    max-width:500px;
+    padding:30px 20px;
+    z-index:1
 }
+
 /**
   ヘッダーのタイトルのCSS設定
 **/
 .mainHeader .text h3 {
-  font-size: 3em;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    font-size:3em;
+    margin:0;
+    padding:0;
+    text-align:center
 }
 
 /**
   コンテンツのタイトルのCSS設定
 **/
 .content > h2 {
-  font-size: 75px;
-  color:#4B484D;
-  margin: 0;
-  padding: 40px 0;
-  text-align: center;
-  padding-top:70px;
-  padding-bottom:10px;
-  font-family:'Gill Sans','ヒラギノ角ゴ Std';
-
-
-
-
+    font-size:75px;
+    color:#4B484D;
+    margin:0;
+    padding:40px 0;
+    text-align:center;
+    padding-top:70px;
+    padding-bottom:10px;
+    font-family:'Gill Sans','ヒラギノ角ゴ Std'
 }
-.content >p{
-  text-align: center;
-  font-size:70px;
-  color:#777;
+
+.content >p {
+    text-align:center;
+    font-size:70px;
+    color:#777
 }
+
 /**
   コンテンツの横並びのCSS設定
 **/
 .content .list {
-
-  margin: 0;
-  padding:0px 0px 40px 40px;
+    margin:0;
+    padding:0 0 40px 40px
 }
+
 .content .list img {
-  width: 100%;
-  display: block;
-  margin: 0 auto 20px;
-
-
-}
-.content .list h2, .content .list p ,p{
-  font-size:20px;
-  margin: 0;
-  padding: 0;
-  color:#000;
-  font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-
+    width:100%;
+    display:block;
+    margin:0 auto 20px
 }
 
-.box-copy{
-  position:absolute;
-    z-index: 2;
-
+.content .list h2,.content .list p,p {
+    font-size:20px;
+    margin:0;
+    padding:0;
+    color:#000;
+    font-family:"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif
 }
 
-.whats-box{
-  background-color:#F0BA32;
+.box-copy {
+    position:absolute;
+    z-index:2
 }
+
+.whats-box {
+    background-color:#F0BA32
+}
+
 .movie {
-  text-align:center;
+    text-align:center
 }
+
 /**
 コンテンツタイトルのCSS設定
 **/
 .content .list h2 {
-  margin: 40px 0;
-  text-align: center;
-  font-size:20px;
+    margin:40px 0;
+    text-align:center;
+    font-size:20px
 }
 
 .mainFooter {
-  font-size: 12px;
+    font-size:12px
 }
+
 .mainFooter p {
-  margin: 0;
-  padding: 20px 0;
-  text-align: center;
-  background-color: #fff;
+    margin:0;
+    padding:20px 0;
+    text-align:center;
+    background-color:#fff
 }
 
-footer a{
-  font-size:15px;
+footer a {
+    font-size:15px
 }
 
-
-
-h2{
-  font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;;
-  font-size:20px;
-  color:#FF073C;
-  padding-top:20px;
-  text-align: center;
-
+h2 {
+    font-family:"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    font-size:20px;
+    color:#FF073C;
+    padding-top:20px;
+    text-align:center
 }
 
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+html,body {
+    margin:0;
+    padding:0;
+    height:100%
 }
- 
+
 #container {
-    width: 100%;
-    height: 100%;
-    display: block;
+    width:100%;
+    height:100%;
+    display:block
 }
- 
+
 .cnt {
-    padding: 20px;
-    border: 2px dotted #009;
-    font-size: 24px;
-    color: #333;
-    background-color: gray;
+    padding:20px;
+    border:2px dotted #009;
+    font-size:24px;
+    color:#333;
+    background-color:gray
 }
 
-.modal-footer .btn+.btn{
-  margin-left:20px;
-  margin-bottom:20px;
+.modal-footer .btn+.btn {
+    margin-left:20px;
+    margin-bottom:20px
 }
-
 
 .view {
+    margin:10px;
+    float:left;
+    border:10px solid #fff;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    box-shadow:1px 1px 2px #e6e6e6;
+    cursor:default;
+    background:#fff url(img/bgimg.jpg) no-repeat center center
+}
 
-    margin: 10px;
-    float: left;
-    border: 10px solid #fff;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    box-shadow: 1px 1px 2px #e6e6e6;
-    cursor: default;
-    background: #fff url(img/bgimg.jpg) no-repeat center center
+.view .mask,.view .content {
+    width:1070px;
+    height:570px;
+    position:absolute;
+    overflow:hidden;
+    top:0;
+    left:0
 }
-.view .mask, .view .content {
-    width: 1070px;
-    height: 570px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
+
 .view img {
-    display: block;
-    position: relative
+    display:block;
+    position:relative
 }
+
 .view h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0;
+    text-transform:uppercase;
+    color:#fff;
+    text-align:center;
+    position:relative;
+    font-size:17px;
+    padding:10px;
+    background:rgba(0,0,0,0.8);
+    margin:20px 0 0
 }
+
 .view p {
- 
-    font-size: 18px;
-    position: relative;
-    color: #f5f5f5;
-    padding: 10px 20px 20px;
-    text-align: center;
-    opacity: 0;
-
+    font-size:18px;
+    position:relative;
+    color:#f5f5f5;
+    padding:10px 20px 20px;
+    text-align:center;
+    opacity:0
 }
+
 .view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
-    opacity: 0;
+    display:inline-block;
+    text-decoration:none;
+    padding:7px 14px;
+    background:#000;
+    color:#fff;
+    text-transform:uppercase;
+    box-shadow:0 0 1px #000;
+    opacity:0
 }
+
 .view a.info:hover {
-    box-shadow: 0 0 5px #000;
+    box-shadow:0 0 5px #000
 }
 
-.view:hover p,
-.view:hover a {
-  opacity: 1;
+.view:hover p,.view:hover a {
+    opacity:1
 }
 
-.view-second img {  
-    transition: all 0.2s ease-in;
+.view-second img {
+    transition:all .2s ease-in
 }
-.view-second .mask { 
-    background-color: rgba(169,169,169, 0.5); 
-    width: 1070px;
-    padding: 570px;
-    height: 300px;
-    opacity: 0;
-    transform: translate(265px, 145px) rotate(45deg);
-    transition: all 0.2s ease-in-out;
+
+.view-second .mask {
+    background-color:rgba(169,169,169,0.5);
+    width:1070px;
+    padding:570px;
+    height:300px;
+    opacity:0;
+    transform:translate(265px,145px) rotate(45deg);
+    transition:all .2s ease-in-out
 }
+
 .view-second h2 {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    background: transparent;
-    margin: 20px 40px 0px 40px;
-    transform: translate(200px, -200px);
-    transition: all 0.2s ease-in-out;
-}
-.view-second p { 
-    transform: translate(-200px, 200px);
-    transition: all 0.2s ease-in-out;
-}
-.view-second a.info { 
-    transform: translate(0px, 100px);
-    transition: all 0.2s 0.1s ease-in-out;
-} 
-
-.view-second:hover .mask { 
-    opacity:1; 
-    transform: translate(-80px, -125px) rotate(45deg);
-}                             
-.view-second:hover h2 { 
-    transform: translate(0px,0px);
-    transition-delay: 0.3s; 
-}
-.view-second:hover p { 
-    transform: translate(0px,0px); 
-    transition-delay: 0.4s;
-}
-.view-second:hover a.info { 
-    transform: translate(0px,0px); 
-    transition-delay: 0.5s;
+    border-bottom:1px solid rgba(0,0,0,0.3);
+    background:transparent;
+    margin:20px 40px 0;
+    transform:translate(200px,-200px);
+    transition:all .2s ease-in-out
 }
 
+.view-second p {
+    transform:translate(-200px,200px);
+    transition:all .2s ease-in-out
+}
 
+.view-second a.info {
+    transform:translate(0px,100px);
+    transition:all .2s .1s ease-in-out
+}
+
+.view-second:hover .mask {
+    opacity:1;
+    transform:translate(-80px,-125px) rotate(45deg)
+}
+
+.view-second:hover h2 {
+    transform:translate(0px,0px);
+    transition-delay:.3s
+}
+
+.view-second:hover p {
+    transform:translate(0px,0px);
+    transition-delay:.4s
+}
+
+.view-second:hover a.info {
+    transform:translate(0px,0px);
+    transition-delay:.5s
+}
 
 /**----------------------------------------------------------------------------**/
 .view2 {
-    width: 500px;
-    height: 400px;
-    margin: 0px 380px;
-    float: left;
-    border: 10px solid #fff;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    box-shadow: 1px 1px 2px #e6e6e6;
-    cursor: default;
-    background: #fff url(img/bgimg.jpg) no-repeat center center
+    width:500px;
+    height:400px;
+    margin:0 380px;
+    float:left;
+    border:10px solid #fff;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    box-shadow:1px 1px 2px #e6e6e6;
+    cursor:default;
+    background:#fff url(img/bgimg.jpg) no-repeat center center
 }
 
-.home .view2{
-  float: none;
+.home .view2 {
+    float:none
 }
 
-
-
-.logoutbtn{
-  margin-left: auto;
-
-}
-
-
-
-
-.hovbutton {
-  display: inline-block;
-  width: 150px;
-  height: 54px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 54px;
-  outline: none;
-
-}
-
-.hovbutton,
-.hovbutton::before,
-.hovbutton::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+.logoutbtn {
+    margin-left:auto
 }
 
 .hovbutton {
-  background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  line-height: 50px;
+    display:inline-block;
+    width:150px;
+    height:54px;
+    text-align:center;
+    text-decoration:none;
+    line-height:54px;
+    outline:none
 }
+
+.hovbutton,.hovbutton::before,.hovbutton::after {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition:all .3s;
+    transition:all .3s
+}
+
+.hovbutton {
+    background-color:transparent;
+    border:2px solid #fff;
+    color:#fff;
+    line-height:50px
+}
+
 .hovbutton:hover {
-  background-color: rgba(255, 255, 255, .2);
+    background-color:rgba(255,255,255,.2)
 }
-
-
 
 .headbutton {
-  float:right;
-
+    float:right
 }
+
 .hovbutton::after {
-  top: 4px;
-  left: 4px;
-  width: 138px;
-  height: 42px;
-  border: 2px solid #333;
-  opacity: 0;
+    top:4px;
+    left:4px;
+    width:138px;
+    height:42px;
+    border:2px solid #333;
+    opacity:0
 }
+
 .hovbutton:hover::after {
-  opacity: 1;
+    opacity:1
 }
 
-
-
-.hide{
-  display:none;
+.hide {
+    display:none
 }
 
-.mainfooter{
-  border-top:1px #FF073C solid;
-  padding:20px;
-
-
+.mainfooter {
+    border-top:1px #FF073C solid;
+    padding:20px
 }
 
-iframe{
-  opacity:0.8;
-  vertical-align: bottom;
-  margin-left:-75px;
+iframe {
+    opacity:.8;
+    vertical-align:bottom;
+    margin-left:-75px
 }
 
-.copyright{
-  text-align: right
+.copyright {
+    text-align:right
 }
 
 .modal-footer {
-  text-align: center;
+    text-align:center
 }
 
-.black{
- margin-left:70px;
+.black {
+    margin-left:70px
 }
 
-.contact-row{
-  background-color:#fff;
-  padding-top:5px;
-
-}
-.contact-row a{
-
-  text-align: center;
-  font-size:25px;
+.contact-row {
+    background-color:#fff;
+    padding-top:5px
 }
 
-
-.about h2{
-  font-size:20px;
-  text-align: center;
-
-
-
-}
-.about p{
-  text-align: left;
-  font-size:15px;
-}
-.about img{
-  padding-left:70px;
+.contact-row a {
+    text-align:center;
+    font-size:25px
 }
 
-.carousel-inner img{
-    width: 100%;
+.about h2 {
+    font-size:20px;
+    text-align:center
 }
 
-.question-box h1{
-  font-size:20px;
+.about p {
+    text-align:left;
+    font-size:15px
+}
 
+.about img {
+    padding-left:70px
+}
+
+.carousel-inner img {
+    width:100%
+}
+
+.question-box h1 {
+    font-size:20px
 }
 
 .question-textarea.form-control {
-width: 100%;
-height: 10em;
-
-
+    width:100%;
+    height:10em
 }
 
-
-
-.catch-copy h2{
-
-color: #fff;
-font-size: 30px;
-font-weight: 600;
-padding: 30px;
-margin-top: 240px;
+.catch-copy h2 {
+    color:#fff;
+    font-size:30px;
+    font-weight:600;
+    padding:30px;
+    margin-top:240px
 }
 
-
-
-.modal-body{
-  border-bottom-width: 0px;
+.modal-body {
+    border-bottom-width:0
 }
 
 .emailbtn {
-  margin-top:10px;
-
+    margin-top:10px
 }
 
 .emailbtn {
-  position: relative;
-  z-index: 2;
-  background-color: #333;
-  border: 2px solid #333;
-  color: #fff;
-  line-height: 50px;
+    position:relative;
+    z-index:2;
+    background-color:#333;
+    border:2px solid #333;
+    color:#fff;
+    line-height:50px
 }
+
 .emailbtn:hover {
-  background-color: #fff;
-  border-color: #8ec31e;
-  color: #8ec31e;
+    background-color:#fff;
+    border-color:#8ec31e;
+    color:#8ec31e
 }
-.emailbtn::before,
-.emailbtn::after {
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-color: #333;
+
+.emailbtn::before,.emailbtn::after {
+    left:0;
+    width:100%;
+    height:50%;
+    background-color:#333
 }
+
 .emailbtn::before {
-  top: 0;
+    top:0
 }
+
 .emailbtn::after {
-  bottom: 0;
-}
-.emailbtn:hover::before,
-.emailbtn:hover::after {
-  height: 0;
-  background-color: #59b1eb;
+    bottom:0
 }
 
-
-.Qbutton{
-  position: relative;
-  z-index: 2;
-  padding:10px;
-  background-color: #333;
-  border: 2px solid #333;
-  color: #fff;
-  line-height: 50px;
-  margin-top:10px;
-  height:50px;
-  width:100px;
-
+.emailbtn:hover::before,.emailbtn:hover::after {
+    height:0;
+    background-color:#59b1eb
 }
+
+.Qbutton {
+    position:relative;
+    z-index:2;
+    padding:10px;
+    background-color:#333;
+    border:2px solid #333;
+    color:#fff;
+    line-height:50px;
+    margin-top:10px;
+    height:50px;
+    width:100px
+}
+
 .Qbutton:hover {
-  background-color: #fff;
-  border-color: #8ec31e;
-  color: #8ec31e;
+    background-color:#fff;
+    border-color:#8ec31e;
+    color:#8ec31e
 }
-.Qbutton::before,
-.Qbutton::after {
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-color: #333;
+
+.Qbutton::before,.Qbutton::after {
+    left:0;
+    width:100%;
+    height:50%;
+    background-color:#333
 }
+
 .Qbutton::before {
-  top: 0;
+    top:0
 }
+
 .Qbutton::after {
-  bottom: 0;
-}
-.Qbutton:hover::before,
-.Qbutton:hover::after {
-  height: 0;
-  background-color: #59b1eb;
+    bottom:0
 }
 
-
-.content h1{
-  border-bottom: 5px
+.Qbutton:hover::before,.Qbutton:hover::after {
+    height:0;
+    background-color:#59b1eb
 }
 
-.okinawaimg{
-  display: block;
-  margin-left:100px;
+.content h1 {
+    border-bottom:5px
 }
 
-#map{
-  height:400px;
+.okinawaimg {
+    display:block;
+    margin-left:100px
+}
+
+#map {
+    height:400px
 }
 
 #map img {
-  max-width: none;
+    max-width:none
 }
 
-.mb50 img{
-  height:439px;
-  width:316px;
-  margin:20px;
+.mb50 img {
+    height:439px;
+    width:316px;
+    margin:20px
 }
 
-.what img{
-  display: block;
- margin-left:200px;
-
+.what img {
+    display:block;
+    margin-left:200px
 }
 
-.interview{
-  background:#fff;
-  padding-top:70px;
-}
-.map h1{
-  font-size:30px;
-  padding-top:40px;
+.interview {
+    background:#fff;
+    padding-top:70px
 }
 
-.map{
-  background: #fff;
+.map h1 {
+    font-size:30px;
+    padding-top:40px
 }
-#topic{
-  padding-bottom:50px;
+
+.map {
+    background:#fff
 }
+
+#topic {
+    padding-bottom:50px
+}
+
 #merit {
-  background: #eee;
-  padding: 40px 0;
+    background:#eee;
+    padding:40px 0
 }
-#merit img{
-    border-bottom: 5px solid #FF073C;
 
+#merit img {
+    border-bottom:5px solid #FF073C
+}
+
+
+.topbutton {
+    display: inline-block;
+    width: 200px;
+    height: 54px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 54px;
+    outline: none;
+}
+.topbutton::before,
+.topbutton::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+}
+.topbutton,
+.topbutton::before,
+.topbutton::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.topbutton {
+    position: relative;
+    background-color: #f7d034;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 52px;
+    -webkit-transition: none;
+    transition: none;
+    box-shadow: 0 3px 0 #f7ba59;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+}
+.topbutton:hover {
+    top: -4px;
+    box-shadow: 0 7px 0 #f7ba59;
+}
+.topbutton:active {
+    top: 3px;
+    box-shadow: none;
 }

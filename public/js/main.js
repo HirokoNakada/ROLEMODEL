@@ -23,17 +23,15 @@ function parseLoginUsingFB() {
                 　
                 user.save(null, {
                     success: function(user) {
-                    
-                         window.location.replace("index2.html");
+                        window.location.replace(
+                            "index2.html"
+                        );
                     },
-                    error: function(user, error) {
-                        
-                    }
+                    error: function(user, error) {}
                 });
             }); //birthdayとかも同じかんじでやる！
         },
         error: function(user, error) {
-         
             FB.logout();
         }
     });
@@ -47,8 +45,8 @@ function loginfacebook() {
             parseLoginUsingFB();
         } else { // それ以外
             // Facebook にログイン
-            FB.login(function(loginResponse) {
-      　　　　　　　if (loginResponse.authResponse) {
+            FB.login(function(loginResponse) {　　　　　　　
+                if (loginResponse.authResponse) {
                     parseLoginUsingFB();
                 } else {
                     console.log(
@@ -105,9 +103,7 @@ $(function() {
                     window.location.replace(
                         "index2.html");
                 },
-                error: function(user, error) {
-                 
-                }
+                error: function(user, error) {}
             });
         });
     }
@@ -126,12 +122,10 @@ $(function() {
             }
         });
     });
-
-    $("#logoutBtn").click(function () {
-      Parse.User.logOut();
-      window.location.href = 'index.html';
+    $("#logoutBtn").click(function() {
+        Parse.User.logOut();
+        window.location.href = 'index.html';
     });
-
     // ここから下にログアウト後の処理を書く。
     $("#sendemail_btn").click(function() {
         var emailField = $("#sendemail");
@@ -151,31 +145,24 @@ $(function() {
                 // 保存する
                 subs.save();
                 // 成功した場合の処理
-               
             },
             error: function(error) {
                 // エラーした場合の処理
             }
         });
     });
-
     $("#fbtouroku").click(function() {
         loginfacebook();
-   
     });
-
-     $("#fblogin").click(function() {
+    $("#fblogin").click(function() {
         loginfacebook();
-   
     });
-    $('#div-modal2').on('show.bs.modal', function (event) {      // div-modal2 の ダイアログをだしたときに
-        var clickedObject = $(event.relatedTarget);    // クリックされたタグ（<a> タグ）
-        var person = clickedObject.data("person");   // の data-person の値を取ってくる
-
+    $('#div-modal2').on('show.bs.modal', function(event) { // div-modal2 の ダイアログをだしたときに
+        var clickedObject = $(event.relatedTarget); // クリックされたタグ（<a> タグ）
+        var person = clickedObject.data("person"); // の data-person の値を取ってくる
         console.log("Setting hidden value to " + person);
-    $("#person").val(person);       // <input type="hidden" id="person"> に値を追加する
-});
-
+        $("#person").val(person); // <input type="hidden" id="person"> に値を追加する
+    });
     $("#QuestionBtn").click(function() {
         console.log("question")
             // Simple syntax to create a new subclass of Parse.Object.
@@ -184,66 +171,49 @@ $(function() {
         var question = new Question();
         var val = $(':text[name="my-text"]').val();
         console.log(val);
-    
         question.set("text", val);
-
         // 今ログインしているユーザの取得
         var user = Parse.User.current();
-
         // ユーザ名が変数 name に入る
         var name = user.getUsername();
-
-        question.set("name",name);
-
+        question.set("name", name);
         var person = $("#person").val();
         question.set("person", person);
-
         question.save(null, {
             success: function(question) {
                 // Execute any logic that should take place after the object is saved.
-
                 $("#div-modal2").modal('hide');
             },
             error: function(question, error) {
                 // Execute any logic that should take place if the save fails.
                 // error is a Parse.Error with an error code and message.
-            
             }
         }); // => "This is text."
-         
-           
     });
-  var currentUser = Parse.User.current();
-
-if (currentUser) {
-    var welcome = $("#welcome");    // welcome と付いているタグを抽出
-
-    if (welcome.length) {    // welcome のタグがある場合だけ
-        welcome.text(currentUser.getUsername());   // Parse にあるユーザ名を表示する
+    var currentUser = Parse.User.current();
+    if (currentUser) {
+        var welcome = $("#welcome"); // welcome と付いているタグを抽出
+        if (welcome.length) { // welcome のタグがある場合だけ
+            welcome.text(currentUser.getUsername()); // Parse にあるユーザ名を表示する
+        }
     }
-}
 });
-
-
-
-  $("#div-modal2").on("shown.bs.modal", function ( e ) {
-        // ダイアログが表示された時の動作をここに書きます。
-    });
-
-
-$(function(){
-    $('.btns').click(function(){
+$("#div-modal2").on("shown.bs.modal", function(e) {
+    // ダイアログが表示された時の動作をここに書きます。
+});
+$(function() {
+    $('.btns').click(function() {
         wn = '.' + $(this).data('tgt');
         var mW = $(wn).find('.modalBody').innerWidth() / 2;
         var mH = $(wn).find('.modalBody').innerHeight() / 2;
-        $(wn).find('.modalBody').css({'margin-left':-mW,'margin-top':-mH});
+        $(wn).find('.modalBody').css({
+            'margin-left': -mW,
+            'margin-top': -mH
+        });
         $(wn).fadeIn(500);
     });
-    $('.close,.modalBK').click(function(){
+    $('.close,.modalBK').click(function() {
         wn = '.' + $(this).data('tgt');
         $(wn).fadeOut(500);
     });
 });
-
-
-
